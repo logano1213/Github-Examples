@@ -1,0 +1,88 @@
+{
+  "remoteUser": "codespace",
+  "image": "mcr.microsoft.com/devcontainers/universal:5",
+  "runArgs": [
+    "--cap-add=SYS_PTRACE",
+    "--security-opt",
+    "seccomp=unconfined",
+    "--privileged",
+    "--init",
+    "--label",
+    "ContainerVersion=13",
+    "--hostname",
+    "codespaces-4c5ce2",
+    "--add-host",
+    "codespaces-4c5ce2:127.0.0.1",
+    "--cap-add",
+    "sys_nice",
+    "--network",
+    "host"
+  ],
+  "settings": {
+    "go.toolsManagement.checkForUpdates": "local",
+    "go.useLanguageServer": true,
+    "go.gopath": "/go",
+    "python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+    "jupyter.kernels.filter": [
+      {
+        "path": "/opt/conda/bin/python",
+        "type": "pythonEnvironment"
+      },
+      {
+        "path": "/bin/python2",
+        "type": "pythonEnvironment"
+      },
+      {
+        "path": "/usr/bin/python2",
+        "type": "pythonEnvironment"
+      },
+      {
+        "path": "/usr/local/python/current/bin/python3",
+        "type": "pythonEnvironment"
+      },
+      {
+        "path": "/usr/local/python/current/bin/python",
+        "type": "pythonEnvironment"
+      },
+      {
+        "path": "/usr/bin/python3",
+        "type": "pythonEnvironment"
+      },
+      {
+        "path": "/bin/python3",
+        "type": "pythonEnvironment"
+      }
+    ],
+    "lldb.executable": "/usr/bin/lldb"
+  },
+  "name": "basic configure",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mhutchie.git-graph",
+        "phil294.git-log--graph"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/terraform:1": {}
+  },
+  "containerEnv": {
+    "CODESPACES": "true",
+    "ContainerVersion": "13",
+    "RepositoryName": "Github-Examples"
+  },
+  "remoteEnv": {
+    "CLOUDENV_ENVIRONMENT_ID": "0da9b07d-b561-45c0-b73f-fe2c6b4fca8b",
+    "CODESPACE_NAME": "zany-capybara-q7vgq5wpx6r539rvr"
+  },
+  "mounts": [
+    "source=/root/.codespaces/shared,target=/workspaces/.codespaces/shared,type=bind",
+    "source=/var/lib/docker/codespacemount/.persistedshare,target=/workspaces/.codespaces/.persistedshare,type=bind",
+    "source=/.codespaces/agent/mount,target=/.codespaces/bin,type=bind",
+    "source=/mnt/containerTmp,target=/tmp,type=bind"
+  ],
+  "workspaceMount": "type=bind,src=/var/lib/docker/codespacemount/workspace,dst=/workspaces",
+  "workspaceFolder": "/workspaces/Github-Examples"
+}

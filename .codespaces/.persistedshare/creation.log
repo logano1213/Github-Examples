@@ -1,0 +1,330 @@
+2026-07-10 06:39:33.728Z: Host information
+2026-07-10 06:39:33.728Z: ----------------
+2026-07-10 06:39:33.728Z: OS: Ubuntu 22.04.5 LTS (stable release)
+2026-07-10 06:39:33.728Z: Image details: https://github.com/github/codespaces-host-images/blob/main/README.md
+2026-07-10 06:39:33.728Z: ----------------
+
+=================================================================================
+2026-07-10 06:39:33.755Z: Configuration starting...
+2026-07-10 06:39:33.875Z: Cloning...
+2026-07-10 06:39:34.788Z: Using image: mcr.microsoft.com/devcontainers/universal
+
+=================================================================================
+2026-07-10 06:39:35.032Z: Creating container...
+2026-07-10 06:39:35.093Z: $ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/Github-Examples --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --omit-config-remote-env-from-metadata --skip-non-blocking-commands --skip-post-create --config "/var/lib/docker/codespacemount/workspace/Github-Examples/.devcontainer/devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+2026-07-10 06:39:35.241Z: @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1052-azure x64.
+2026-07-10 06:39:35.511Z: Resolving Feature dependencies for 'ghcr.io/devcontainers/features/github-cli:1'...
+2026-07-10 06:39:37.011Z: Resolving Feature dependencies for 'ghcr.io/devcontainers/features/terraform:1'...
+2026-07-10 06:39:37.599Z: Soft-dependency 'ghcr.io/devcontainers/features/git' is not required.  Removing from installation order...
+2026-07-10 06:39:37.599Z: Soft-dependency 'ghcr.io/devcontainers/features/common-utils' is not required.  Removing from installation order...
+2026-07-10 06:39:37.599Z: Soft-dependency 'ghcr.io/devcontainers/features/common-utils' is not required.  Removing from installation order...
+2026-07-10 06:39:38.122Z: Files to omit: ''
+2026-07-10 06:39:38.667Z: Files to omit: ''
+2026-07-10 06:39:38.689Z: $5 --build-arg _DEV_CONTAINERS_IMAGE_USER=root --build-arg _DEV_CONTAINERS_FEATURE_CONTENT_SOURCE=dev_container_feature_content_temp --target dev_containers_target_stage -f /tmp/devcontainercli-root/container-features/0.83.3-1783665575500/Dockerfile.extended -t vsc-github-examples-e3a814aed716187e1672694b796c9a231867d8cb91fdc5fbc66ff12915abf5cf-features /var/lib/docker/codespacemount/.persistedshare/empty-folder
+2026-07-10 06:39:39.072Z: #0 building with "default" instance using docker driver2026-07-10 06:39:39.073Z: 
+
+#1 [internal] load build definition from Dockerfile.extended
+#1 transferring dockerfile: 7.00kB done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for mcr.microsoft.com/devcontainers/universal:5
+#3 DONE 0.0s
+
+#4 [context dev_containers_feature_content_source] load .dockerignore
+#4 transferring dev_containers_feature_content_source: 2B done
+#4 DONE 0.0s
+
+#5 [dev_containers_feature_content_normalize 1/3] FROM mcr.microsoft.com/devcontainers/universal:5
+2026-07-10 06:39:39.254Z: #5 ...
+
+2026-07-10 06:39:39.255Z: #6 [context dev_containers_feature_content_source] load from client
+#6 transferring dev_containers_feature_content_source: 109.37kB 0.0s done
+#6 DONE 0.1s
+2026-07-10 06:39:39.404Z: 
+2026-07-10 06:39:39.405Z: #5 [dev_containers_feature_content_normalize 1/3] FROM mcr.microsoft.com/devcontainers/universal:5
+2026-07-10 06:39:39.450Z: #5 DONE 0.4s
+2026-07-10 06:39:39.684Z: 
+2026-07-10 06:39:39.686Z: #7 [dev_containers_feature_content_normalize 2/3] COPY --from=dev_containers_feature_content_source devcontainer-features.builtin.env /tmp/build-features/
+#7 DONE 0.1s
+
+#8 [dev_containers_feature_content_normalize 3/3] RUN chmod -R 0755 /tmp/build-features/
+2026-07-10 06:39:39.881Z: #8 ...
+
+#9 [dev_containers_target_stage 2/6] RUN mkdir -p /tmp/dev-container-features
+#9 DONE 0.4s
+2026-07-10 06:39:40.025Z: 
+#8 [dev_containers_feature_content_normalize 3/3] RUN chmod -R 0755 /tmp/build-features/
+#8 DONE 0.4s
+
+#10 [dev_containers_target_stage 3/6] COPY --from=dev_containers_feature_content_normalize /tmp/build-features/ /tmp/dev-container-features
+2026-07-10 06:39:40.219Z: #10 DONE 0.0s
+
+#11 [dev_containers_target_stage 4/6] RUN echo "_CONTAINER_USER_HOME=$( (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********) | cut -d: -f6)" >> /tmp/dev-container-features/devcontainer-features.builtin.env && echo "_REMOTE_USER_HOME=$( (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********) | cut -d: -f6)" >> /tmp/dev-container-features/devcontainer-features.builtin.env
+2026-07-10 06:39:40.372Z: #11 DONE 0.3s
+2026-07-10 06:39:40.521Z: 
+#12 [dev_containers_target_stage 5/6] RUN --mount=type=bind,from=dev_containers_feature_content_source,source=github-cli_0,target=/tmp/build-features-src/github-cli_0     cp -ar /tmp/build-features-src/github-cli_0 /tmp/dev-container-features  && chmod -R 0755 /tmp/dev-container-features/github-cli_0  && cd /tmp/dev-container-features/github-cli_0  && chmod +x ./devcontainer-features-install.sh  && ./devcontainer-features-install.sh  && rm -rf /tmp/dev-container-features/github-cli_02026-07-10 06:39:40.521Z: 
+2026-07-10 06:39:40.604Z: #12 0.234 ===========================================================================2026-07-10 06:39:40.605Z: 
+#12 0.235 Feature       : GitHub CLI
+#12 0.235 Description   : Installs the GitHub CLI. Auto-detects latest version and installs needed dependencies.
+#12 0.235 Id            : ghcr.io/devcontainers/features/github-cli
+#12 0.235 Version       : 1.1.0
+#12 0.235 Documentation : ********/devcontainers/features/tree/main/src/github-cli
+#12 0.235 Options       :
+#12 0.235     VERSION="latest"
+#12 0.235     INSTALLDIRECTLYFROMGITHUBRELEASE="********"
+#12 0.235     EXTENSIONS=""
+#12 0.235 ===========================================================================
+2026-07-10 06:39:40.784Z: #12 0.414 Downloading github CLI...
+2026-07-10 06:39:42.146Z: #12 1.775 CLI_VERSION=2.96.0
+2026-07-10 06:39:42.301Z: #12 1.782 /tmp/ghcli /tmp/dev-container-features/github-cli_0
+2026-07-10 06:39:42.607Z: #12 2.238 
+#12 2.238      0K .2026-07-10 06:39:42.816Z: ....... ......                    100%  212M=0.07s
+#12 2.296 
+2026-07-10 06:39:44.507Z: #12 4.138 (Reading database ... 58630 files and directories currently installed.)
+2026-07-10 06:39:44.686Z: #12 4.143 Preparing to unpack .../gh_2.96.0_linux_amd64.deb ...
+2026-07-10 06:39:44.686Z: #12 4.163 Unpacking gh (2.96.0) over (2.88.0) ...
+2026-07-10 06:39:52.733Z: #12 12.36 Setting up gh (2.96.0) ...
+2026-07-10 06:39:52.902Z: #12 12.38 Processing triggers for man-db (2.12.0-4build2) ...
+2026-07-10 06:39:55.542Z: #12 15.17 /tmp/dev-container-features/github-cli_0
+2026-07-10 06:39:55.750Z: #12 DONE 15.2s
+
+#13 [dev_containers_target_stage 6/6] RUN --mount=type=bind,from=dev_containers_feature_content_source,source=terraform_1,target=/tmp/build-features-src/terraform_1     cp -ar /tmp/build-features-src/terraform_1 /tmp/dev-container-features  && chmod -R 0755 /tmp/dev-container-features/terraform_1  && cd /tmp/dev-container-features/terraform_1  && chmod +x ./devcontainer-features-install.sh  && ./devcontainer-features-install.sh  && rm -rf /tmp/dev-container-features/terraform_1
+2026-07-10 06:39:55.957Z: #13 0.358 ===========================================================================
+#13 0.358 Feature       : Terraform, tflint, and TFGrunt
+#13 0.358 Description   : Installs the Terraform CLI and optionally TFLint and Terragrunt. Auto-detects latest version and installs needed dependencies.
+#13 0.358 Id            : ghcr.io/devcontainers/features/terraform
+#13 0.358 Version       : 1.4.3
+#13 0.358 Documentation : ********/devcontainers/features/tree/main/src/terraform
+#13 0.358 Options       :
+#13 0.358     VERSION="latest"
+#13 0.358     TFLINT="latest"
+#13 0.358     TERRAGRUNT="latest"
+#13 0.358     INSTALLSENTINEL="false"
+#13 0.358     INSTALLTFSEC="false"
+#13 0.358     INSTALLTERRAFORMDOCS="false"
+#13 0.358     HTTPPROXY=""
+#13 0.358     CUSTOMDOWNLOADSERVER=""
+#13 0.358 ===========================================================================
+2026-07-10 06:39:56.163Z: #13 0.415 find: ‘/var/lib/apt/lists/*’: No such file or directory
+#13 0.415 Running apt-get update...
+2026-07-10 06:39:56.480Z: #13 0.883 Get:1 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]
+2026-07-10 06:39:56.727Z: #13 1.130 Get:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main all Packages [643 B]2026-07-10 06:39:56.727Z: 
+2026-07-10 06:39:56.895Z: #13 1.146 Get:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [208 kB]
+2026-07-10 06:39:57.056Z: #13 1.460 Get:4 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
+2026-07-10 06:39:57.234Z: #13 1.487 Get:5 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-07-10 06:39:58.109Z: #13 2.512 Get:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-07-10 06:39:58.268Z: #13 2.520 Get:7 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1491 kB]
+2026-07-10 06:39:58.369Z: #13 2.772 Get:8 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]2026-07-10 06:39:58.369Z: 
+2026-07-10 06:39:58.630Z: #13 3.033 Get:9 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
+2026-07-10 06:39:58.818Z: #13 3.220 Get:10 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
+2026-07-10 06:39:59.097Z: #13 3.497 Get:11 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [43.8 kB]
+2026-07-10 06:39:59.278Z: #13 3.504 Get:12 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1023 kB]2026-07-10 06:39:59.279Z: 
+#13 3.591 Get:13 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1417 kB]
+#13 3.680 Get:14 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
+2026-07-10 06:40:00.218Z: #13 4.619 Get:15 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
+#13 4.619 Get:16 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [49.5 kB]
+2026-07-10 06:40:00.325Z: #13 4.623 Get:17 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2113 kB]
+#13 4.728 Get:18 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1359 kB]
+2026-07-10 06:40:00.444Z: #13 4.776 Get:19 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1524 kB]
+#13 4.846 Get:20 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [35.9 kB]
+2026-07-10 06:40:00.611Z: #13 4.848 Get:21 http://archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Packages [671 B]
+#13 4.850 Get:22 http://archive.ubuntu.com/ubuntu noble-backports/main amd64 Packages [48.9 kB]
+2026-07-10 06:40:01.162Z: #13 5.560 Fetched 31.5 MB in 5s (6748 kB/s)
+#13 5.560 Reading package lists...2026-07-10 06:40:02.246Z: 
+2026-07-10 06:40:02.427Z: #13 6.679 Reading package lists...2026-07-10 06:40:03.091Z: 
+2026-07-10 06:40:03.255Z: #13 7.507 Building dependency tree...2026-07-10 06:40:03.353Z: 
+#13 7.756 Reading state information...
+2026-07-10 06:40:03.520Z: #13 7.922 gnupg2 is already the newest version (2.4.4-2ubuntu17.4).
+#13 7.922 dirmngr is already the newest version (2.4.4-2ubuntu17.4).
+#13 7.922 unzip is already the newest version (6.0-28ubuntu4.1).
+#13 7.922 The following additional packages will be installed:
+2026-07-10 06:40:03.728Z: #13 7.922   bind9-dnsutils bind9-host bind9-libs libcurl3t64-gnutls libcurl4-openssl-dev
+2026-07-10 06:40:03.728Z: #13 7.923   libcurl4t64 liblmdb0 libmaxminddb0
+#13 7.924 Suggested packages:
+#13 7.924   libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-1-dev
+#13 7.924   mmdb-bin
+#13 7.977 The following NEW packages will be installed:
+#13 7.979   bind9-dnsutils bind9-host bind9-libs dnsutils liblmdb0 libmaxminddb0
+#13 7.979 The following packages will be upgraded:
+#13 7.980   ca-certificates coreutils curl libcurl3t64-gnutls libcurl4-openssl-dev
+#13 7.980   libcurl4t64
+2026-07-10 06:40:04.328Z: #13 8.729 6 upgraded, 6 newly installed, 0 to remove and 122 not upgraded.
+#13 8.729 Need to get 4441 kB of archives.
+#13 8.729 After this operation, 4382 kB of additional disk space will be used.
+#13 8.729 Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 coreutils amd64 9.4-3ubuntu6.2 [1412 kB]
+2026-07-10 06:40:06.167Z: #13 10.57 Get:2 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ca-certificates all 20260601~24.04.1 [139 kB]
+2026-07-10 06:40:06.341Z: #13 10.59 Get:3 http://archive.ubuntu.com/ubuntu noble/main amd64 liblmdb0 amd64 0.9.31-1build1 [48.1 kB]
+#13 10.59 Get:4 http://archive.ubuntu.com/ubuntu noble/main amd64 libmaxminddb0 amd64 1.9.1-1build1 [24.4 kB]
+#13 10.59 Get:5 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-libs amd64 1:9.18.39-0ubuntu0.24.04.5 [1258 kB]
+2026-07-10 06:40:06.402Z: #13 10.81 Get:6 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-host amd64 1:9.18.39-0ubuntu0.24.04.5 [50.5 kB]
+2026-07-10 06:40:06.502Z: #13 10.81 Get:7 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 bind9-dnsutils amd64 1:9.18.39-0ubuntu0.24.04.5 [156 kB]
+#13 10.83 Get:8 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4-openssl-dev amd64 8.5.0-2ubuntu10.11 [446 kB]
+#13 10.88 Get:9 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 curl amd64 8.5.0-2ubuntu10.11 [226 kB]
+#13 10.91 Get:10 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4t64 amd64 8.5.0-2ubuntu10.11 [342 kB]
+2026-07-10 06:40:06.627Z: #13 10.94 Get:11 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 dnsutils all 1:9.18.39-0ubuntu0.24.04.5 [3686 B]
+#13 11.03 Get:12 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl3t64-gnutls amd64 8.5.0-2ubuntu10.11 [334 kB]
+2026-07-10 06:40:08.938Z: #13 13.34 Preconfiguring packages ...
+2026-07-10 06:40:10.170Z: #13 14.57 Fetched 4441 kB in 3s (1453 kB/s)
+2026-07-10 06:40:10.302Z: #13 14.70 (Reading database ... 2026-07-10 06:40:10.410Z: (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%2026-07-10 06:40:10.547Z: (Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58646 files and directories currently installed.)
+#13 14.90 Preparing to unpack .../coreutils_9.4-3ubuntu6.2_amd64.deb ...
+#13 14.95 Unpacking coreutils (9.4-3ubuntu6.2) over (9.4-3ubuntu6.1) ...
+2026-07-10 06:40:11.991Z: #13 16.39 Setting up coreutils (9.4-3ubuntu6.2) ...
+2026-07-10 06:40:12.094Z: #13 16.48 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 2026-07-10 06:40:12.292Z: 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58646 files and directories currently installed.)
+#13 16.54 Preparing to unpack .../00-ca-certificates_20260601~24.04.1_all.deb ...
+#13 16.54 Unpacking ca-certificates (20260601~24.04.1) over (20240203) ...
+2026-07-10 06:40:12.497Z: #13 16.90 Selecting previously unselected package liblmdb0:amd64.
+2026-07-10 06:40:12.613Z: #13 16.91 Preparing to unpack .../01-liblmdb0_0.9.31-1build1_amd64.deb ...
+#13 16.91 Unpacking liblmdb0:amd64 (0.9.31-1build1) ...
+#13 17.00 Selecting previously unselected package libmaxminddb0:amd64.2026-07-10 06:40:12.729Z: 
+#13 17.02 Preparing to unpack .../02-libmaxminddb0_1.9.1-1build1_amd64.deb ...
+#13 17.02 Unpacking libmaxminddb0:amd64 (1.9.1-1build1) ...
+#13 17.06 Selecting previously unselected package bind9-libs:amd64.
+#13 17.07 Preparing to unpack .../03-bind9-libs_1%3a9.18.39-0ubuntu0.24.04.5_amd64.deb ...
+#13 17.07 Unpacking bind9-libs:amd64 (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 17.13 Selecting previously unselected package bind9-host.
+2026-07-10 06:40:12.980Z: #13 17.14 Preparing to unpack .../04-bind9-host_1%3a9.18.39-0ubuntu0.24.04.5_amd64.deb ...
+#13 17.14 Unpacking bind9-host (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 17.17 Selecting previously unselected package bind9-dnsutils.
+#13 17.18 Preparing to unpack .../05-bind9-dnsutils_1%3a9.18.39-0ubuntu0.24.04.5_amd64.deb ...
+#13 17.18 Unpacking bind9-dnsutils (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 17.22 Preparing to unpack .../06-libcurl4-openssl-dev_8.5.0-2ubuntu10.11_amd64.deb ...
+#13 17.23 Unpacking libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.11) over (8.5.0-2ubuntu10.7) ...
+2026-07-10 06:40:13.055Z: #13 17.44 Preparing to unpack .../07-curl_8.5.0-2ubuntu10.11_amd64.deb ...
+2026-07-10 06:40:13.175Z: #13 17.45 Unpacking curl (8.5.0-2ubuntu10.11) over (8.5.0-2ubuntu10.7) ...2026-07-10 06:40:13.176Z: 
+#13 17.58 Preparing to unpack .../08-libcurl4t64_8.5.0-2ubuntu10.11_amd64.deb ...
+2026-07-10 06:40:13.280Z: #13 17.59 Unpacking libcurl4t64:amd64 (8.5.0-2ubuntu10.11) over (8.5.0-2ubuntu10.7) ...
+#13 17.68 Selecting previously unselected package dnsutils.
+2026-07-10 06:40:13.475Z: #13 17.69 Preparing to unpack .../09-dnsutils_1%3a9.18.39-0ubuntu0.24.04.5_all.deb ...
+#13 17.69 Unpacking dnsutils (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 17.74 Preparing to unpack .../10-libcurl3t64-gnutls_8.5.0-2ubuntu10.11_amd64.deb ...
+#13 17.74 Unpacking libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.11) over (8.5.0-2ubuntu10.7) ...
+2026-07-10 06:40:13.475Z: #13 17.88 Setting up liblmdb0:amd64 (0.9.31-1build1) ...
+2026-07-10 06:40:13.685Z: #13 17.89 Setting up libcurl4t64:amd64 (8.5.0-2ubuntu10.11) ...
+#13 17.92 Setting up libmaxminddb0:amd64 (1.9.1-1build1) ...
+#13 17.93 Setting up libcurl3t64-gnutls:amd64 (8.5.0-2ubuntu10.11) ...
+#13 17.94 Setting up ca-certificates (20260601~24.04.1) ...
+2026-07-10 06:40:17.424Z: #13 21.83 Updating certificates in /etc/ssl/certs...
+2026-07-10 06:40:19.486Z: #13 23.89 rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-07-10 06:40:19.738Z: #13 23.90 14 added, 39 removed; done.
+#13 23.94 Setting up libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.11) ...
+#13 23.95 Setting up curl (8.5.0-2ubuntu10.11) ...
+#13 23.96 Setting up bind9-libs:amd64 (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 23.96 Setting up bind9-host (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 23.97 Setting up bind9-dnsutils (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 23.98 Setting up dnsutils (1:9.18.39-0ubuntu0.24.04.5) ...
+#13 23.99 Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+2026-07-10 06:40:25.164Z: #13 29.55 Processing triggers for man-db (2.12.0-4build2) ...
+2026-07-10 06:40:26.536Z: #13 30.94 Processing triggers for ca-certificates (20260601~24.04.1) ...
+2026-07-10 06:40:26.710Z: #13 30.95 Updating certificates in /etc/ssl/certs...
+2026-07-10 06:40:27.712Z: #13 32.11 0 added, 0 removed; done.
+2026-07-10 06:40:27.865Z: #13 32.11 Running hooks in /etc/ca-certificates/update.d...
+#13 32.12 done.
+2026-07-10 06:40:28.289Z: #13 32.69 TERRAFORM_VERSION=1.15.8
+2026-07-10 06:40:28.784Z: #13 33.19 TFLINT_VERSION=0.63.1
+2026-07-10 06:40:29.285Z: #13 33.69 TERRAGRUNT_VERSION=1.1.0
+2026-07-10 06:40:29.443Z: #13 33.69 Downloading terraform...
+2026-07-10 06:40:29.527Z: #13 33.93 (*) Ubuntu Noble detected - attempting GPG verification with fallback...
+2026-07-10 06:40:29.712Z: #13 33.94 (*) Ubuntu Noble detected, using Keybase for HashiCorp GPG key import....2026-07-10 06:40:29.712Z: 
+#13 33.96 gpg: keybox '/tmp/tmp-gnupg/pubring.kbx' created
+2026-07-10 06:40:30.466Z: #13 34.87 gpg: /tmp/tmp-gnupg/trustdb.gpg: trustdb created
+2026-07-10 06:40:30.630Z: #13 34.87 gpg: key 34365D9472D7468F: public key "HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>" imported
+#13 34.88 gpg: Total number processed: 1
+#13 34.88 gpg:               imported: 1
+2026-07-10 06:40:30.699Z: #13 35.10 gpg: Signature made Wed Jul  8 16:27:07 2026 UTC
+#13 35.10 gpg:                using RSA key 374EC75B485913604A831CC7C820C6D5CD27AB87
+2026-07-10 06:40:30.823Z: #13 35.10 gpg: Good signature from "HashiCorp Security (hashicorp.com/security) <security@hashicorp.com>" [unknown]
+#13 35.10 gpg: WARNING: This key is not certified with a trusted signature!
+#13 35.10 gpg:          There is no indication that the signature belongs to the owner.
+#13 35.10 Primary key fingerprint: C874 011F 0AB4 0511 0D02  1055 3436 5D94 72D7 468F
+#13 35.10      Subkey fingerprint: 374E C75B 4859 1360 4A83  1CC7 C820 C6D5 CD27 AB87
+#13 35.14 terraform_1.15.8_linux_amd64.zip: OK
+#13 35.23 Archive:  terraform_1.15.8_linux_amd64.zip
+#13 35.23   inflating: LICENSE.txt             2026-07-10 06:40:30.974Z: 
+2026-07-10 06:40:30.974Z: #13 35.23   inflating: terraform               2026-07-10 06:40:31.727Z: 
+2026-07-10 06:40:32.262Z: #13 36.60 Downloading tflint...
+2026-07-10 06:40:33.859Z: #13 38.26 Installing cosign...
+2026-07-10 06:40:34.362Z: #13 38.77 COSIGN_VERSION=3.1.1
+2026-07-10 06:40:34.520Z: #13 38.77   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+#13 38.77                                  Dload  Upload   Total   Spent    Left  Speed
+#13 38.77   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     02026-07-10 06:40:34.672Z:   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-07-10 06:40:35.009Z: #13 39.41   0     02026-07-10 06:40:35.203Z:     0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-07-10 06:40:35.265Z: #13 39.67 100 54.4M  100 54.4M    0     0  60.8M      0 --:--:-- --:--:-- --:--:-- 60.8M2026-07-10 06:40:35.265Z: 
+2026-07-10 06:40:35.371Z: #13 39.74 Selecting previously unselected package cosign.2026-07-10 06:40:35.372Z: 
+#13 39.77 (Reading database ... 58669 files and directories currently installed.)
+2026-07-10 06:40:35.528Z: #13 39.78 Preparing to unpack /tmp/cosign_3.1.1_amd64.deb ...
+#13 39.78 Unpacking cosign (3.1.1) ...
+2026-07-10 06:40:36.116Z: #13 40.52 Setting up cosign (3.1.1) ...
+2026-07-10 06:40:36.280Z: #13 40.57 Installation of cosign succeeded with 3.1.1.
+#13 40.59   ______   ______        _______. __    _______ .__   __.
+#13 40.59  /      | /  __  \      /       ||  |  /  _____||  \ |  |
+#13 40.59 |  ,----'|  |  |  |    |   (----`|  | |  |  __  |   \|  |
+#13 40.59 |  |     |  |  |  |     \   \    |  | |  | |_ | |  . `  |
+#13 40.59 |  `----.|  `--'  | .----)   |   |  | |  |__| | |  |\   |
+#13 40.59  \______| \______/  |_______/    |__|  \______| |__| \__|
+#13 40.59 cosign: A tool for Container Signing, Verification and Storage in an OCI registry.
+#13 40.59 
+#13 40.59 GitVersion:    v3.1.1
+#13 40.59 GitCommit:     7914231b348c4057891edeb321772aad3ed04fce
+#13 40.59 GitTreeState:  clean
+#13 40.59 BuildDate:     2026-06-09T12:10:44Z
+#13 40.59 GoVersion:     go1.26.3
+#13 40.59 Compiler:      gc
+#13 40.59 Platform:      linux/amd64
+#13 40.59 
+#13 40.64 Flag --certificate has been deprecated, please use --bundle with --trusted-root to provide the public certificate2026-07-10 06:40:36.280Z: 
+#13 40.64 Flag --signature has been deprecated, please use --bundle to provide a signature
+2026-07-10 06:40:37.390Z: #13 41.79 Verified OK
+2026-07-10 06:40:37.567Z: #13 41.80 8441a7d97df20431f19c9b9d27ff4c63e308c964e86660bc7cc0cf7bbe0725e8  tflint_linux_amd64.zip
+#13 41.82 tflint_linux_amd64.zip: OK
+#13 41.82 Archive:  /tmp/tf-downloads/tflint_linux_amd64.zip
+#13 41.82   inflating: tflint                  2026-07-10 06:40:37.822Z: 
+2026-07-10 06:40:37.977Z: #13 42.23 Downloading Terragrunt...
+2026-07-10 06:40:38.570Z: #13 42.97 ./install.sh: line 520: warning: command substitution: ignored null byte in input
+2026-07-10 06:40:46.106Z: #13 50.51 terragrunt_linux_amd64: OK2026-07-10 06:40:46.107Z: 
+2026-07-10 06:40:46.381Z: #13 50.58 Done!
+2026-07-10 06:40:50.442Z: #13 DONE 54.8s
+2026-07-10 06:40:50.596Z: 
+#14 preparing layers for inline cache
+2026-07-10 06:41:31.872Z: #14 DONE 41.4s
+
+#15 exporting to image
+#15 exporting layers done
+2026-07-10 06:41:31.987Z: #15 writing image sha256:f1de267a0001056412939f5b31db10179f2205d3d9ac1dade302bfc0a9eb0248 done
+#15 naming to docker.io/library/vsc-github-examples-e3a814aed716187e1672694b796c9a231867d8cb91fdc5fbc66ff12915abf5cf-features done
+#15 DONE 0.0s
+2026-07-10 06:41:31.996Z: Stop: Run: docker buildx build --load --build-arg BUILDKIT_INLINE_CACHE=1 --build-context dev_containers_feature_content_source=/tmp/devcontainercli-root/container-features/0.83.3-1783665575500 --build-arg _DEV_CONTAINERS_BASE_IMAGE=mcr.microsoft.com/devcontainers/universal:5 --build-arg _DEV_CONTAINERS_IMAGE_USER=root --build-arg _DEV_CONTAINERS_FEATURE_CONTENT_SOURCE=dev_container_feature_content_temp --target dev_containers_target_stage -f /tmp/devcontainercli-root/container-features/0.83.3-1783665575500/Dockerfile.extended -t vsc-github-examples-e3a814aed716187e1672694b796c9a231867d8cb91fdc5fbc66ff12915abf5cf-features /var/lib/docker/codespacemount/.persistedshare/empty-folder
+2026-07-10 06:41:32.006Z: $127.0.0.1 --cap-add sys_nice --network host --init --privileged --cap-add SYS_PTRACE --security-opt seccomp=unconfined --entrypoint /bin/sh vsc-github-examples-e3a814aed716187e1672694b796c9a231867d8cb91fdc5fbc66ff12915abf5cf-features -c echo Container started
+2026-07-10 06:41:32.245Z: Container started
+2026-07-10 06:41:32.708Z: Outcome: success User: codespace WorkspaceFolder: /workspaces/Github-Examples
+2026-07-10 06:41:32.725Z: devcontainer process exited with exit code 0
+
+=================================================================================
+2026-07-10 06:41:33.715Z: Running blocking commands...
+2026-07-10 06:41:33.786Z: $ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/Github-Examples --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --user-data-folder /var/lib/docker/codespacemount/.persistedshare --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --omit-config-remote-env-from-metadata --skip-non-blocking-commands --expect-existing-container --config "/var/lib/docker/codespacemount/workspace/Github-Examples/.devcontainer/devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+2026-07-10 06:41:34.049Z: @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1052-azure x64.
+2026-07-10 06:41:34.683Z: Outcome: success User: codespace WorkspaceFolder: /workspaces/Github-Examples
+2026-07-10 06:41:34.698Z: devcontainer process exited with exit code 0
+
+=================================================================================
+2026-07-10 06:41:34.783Z: Configuring codespace...
+2026-07-10 06:41:34.795Z: Running oryx...
+
+=================================================================================
+2026-07-10 06:42:08.603Z: Running commands...
+2026-07-10 06:42:08.604Z: $ devcontainer up --id-label Type=codespaces --workspace-folder /var/lib/docker/codespacemount/workspace/Github-Examples --expect-existing-container --skip-post-attach --mount type=bind,source=/.codespaces/agent/mount/cache,target=/vscode --container-data-folder .vscode-remote/data/Machine --container-system-data-folder /var/vscode-remote --log-level trace --log-format json --update-remote-user-uid-default never --mount-workspace-git-root false --config "/var/lib/docker/codespacemount/workspace/Github-Examples/.devcontainer/devcontainer.json" --override-config /root/.codespaces/shared/merged_devcontainer.json --default-user-env-probe loginInteractiveShell --container-session-data-folder /workspaces/.codespaces/.persistedshare/devcontainers-cli/cache --secrets-file /root/.codespaces/shared/user-secrets-envs.json
+2026-07-10 06:42:08.976Z: @devcontainers/cli 0.83.3. Node.js v18.20.8. linux 6.8.0-1052-azure x64.
+2026-07-10 06:42:10.004Z: Running the postCreateCommand from Feature 'ghcr.io/devcontainers/features/git-lfs:1'...
+
+2026-07-10 06:42:10.004Z: /usr/local/share/pull-git-lfs-artifacts.sh
+2026-07-10 06:42:10.233Z: Fetching git lfs artifacts...
+2026-07-10 06:42:13.257Z: Updated Git hooks.2026-07-10 06:42:13.257Z: 
+Git LFS initialized.
+2026-07-10 06:42:13.851Z: Outcome: success User: codespace WorkspaceFolder: /workspaces/Github-Examples
+2026-07-10 06:42:14.000Z: devcontainer process exited with exit code 0
+
+=================================================================================
+2026-07-10 06:42:14.000Z: Finished configuring codespace.

@@ -1,0 +1,1793 @@
+[2026-07-10T06:41:37.457Z] @microsoft/vscode-dev-containers-cli 0.95.0.
+[2026-07-10T06:41:37.457Z] Start: Resolving Remote for VSC start
+[2026-07-10T06:41:37.459Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:41:37.500Z] Stop (41 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:41:37.502Z] Start: Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:41:37.523Z] Stop (21 ms): Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:41:37.525Z] Start: Inspecting container
+[2026-07-10T06:41:37.525Z] Stop (0 ms): Inspecting container
+[2026-07-10T06:41:37.526Z] Start: Run in container: /bin/sh
+[2026-07-10T06:41:37.531Z] Start: Run in container: uname -m
+[2026-07-10T06:41:37.615Z] x86_64
+[2026-07-10T06:41:37.615Z] 
+[2026-07-10T06:41:37.615Z] Stop (84 ms): Run in container: uname -m
+[2026-07-10T06:41:37.615Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:41:37.621Z] PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[2026-07-10T06:41:37.622Z] 
+[2026-07-10T06:41:37.622Z] Stop (7 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:41:37.623Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:41:37.633Z] Stop (10 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:41:37.634Z] Start: Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:41:37.638Z] 
+[2026-07-10T06:41:37.638Z] 
+[2026-07-10T06:41:37.638Z] Stop (4 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:41:37.639Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:41:37.682Z] 
+[2026-07-10T06:41:37.683Z] 
+[2026-07-10T06:41:37.683Z] Stop (44 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:41:37.686Z] Start: Run in container: test -f '/home/codespace/.vscode-remote/data/Machine/settings.json'
+[2026-07-10T06:41:37.740Z] 
+[2026-07-10T06:41:37.740Z] 
+[2026-07-10T06:41:37.740Z] Exit code 1
+[2026-07-10T06:41:37.740Z] Stop (54 ms): Run in container: test -f '/home/codespace/.vscode-remote/data/Machine/settings.json'
+[2026-07-10T06:41:37.741Z] Start: Run in container: which apt dpkg snap dnf yum rpm apk docker git gh kubectl podman curl wget ssh scp rsync gpg ps lsof netstat top tree find grep zip unzip tar gzip bzip2 xz || ********
+[2026-07-10T06:41:37.780Z] /usr/bin/apt
+/usr/bin/dpkg
+/usr/bin/docker
+/usr/local/bin/git
+/usr/bin/gh
+/usr/local/bin/kubectl
+/usr/bin/curl
+/usr/bin/wget
+/usr/bin/ssh
+/usr/bin/scp
+/usr/bin/rsync
+/usr/bin/gpg
+/usr/bin/ps
+/usr/bin/lsof
+/usr/bin/netstat
+/usr/bin/top
+/usr/bin/tree
+/usr/bin/find
+/usr/bin/grep
+/usr/bin/zip
+/usr/bin/unzip
+/usr/bin/tar
+/usr/bin/gzip
+/opt/conda/bin/bzip2
+/opt/conda/bin/xz
+[2026-07-10T06:41:37.781Z] 
+[2026-07-10T06:41:37.781Z] Stop (40 ms): Run in container: which apt dpkg snap dnf yum rpm apk docker git gh kubectl podman curl wget ssh scp rsync gpg ps lsof netstat top tree find grep zip unzip tar gzip bzip2 xz || ********
+[2026-07-10T06:41:37.782Z] Start: Run in container: mkdir -p '/home/codespace/.vscode-remote/data/Machine' && cat >'/home/codespace/.vscode-remote/data/Machine/settings.json' <<'settingsJSON'
+[2026-07-10T06:41:37.791Z] 
+[2026-07-10T06:41:37.792Z] 
+[2026-07-10T06:41:37.792Z] Stop (10 ms): Run in container: mkdir -p '/home/codespace/.vscode-remote/data/Machine' && cat >'/home/codespace/.vscode-remote/data/Machine/settings.json' <<'settingsJSON'
+[2026-07-10T06:41:37.792Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:41:37.803Z] 
+[2026-07-10T06:41:37.803Z] 
+[2026-07-10T06:41:37.803Z] Stop (11 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:41:37.804Z] Start: Run in container: test -f '/home/codespace/.vscode-remote/data/User/mcp.json'
+[2026-07-10T06:41:37.807Z] 
+[2026-07-10T06:41:37.808Z] 
+[2026-07-10T06:41:37.808Z] Exit code 1
+[2026-07-10T06:41:37.808Z] Stop (4 ms): Run in container: test -f '/home/codespace/.vscode-remote/data/User/mcp.json'
+[2026-07-10T06:41:37.810Z] Start: Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:37.814Z] 
+[2026-07-10T06:41:37.815Z] 
+[2026-07-10T06:41:37.815Z] Exit code 1
+[2026-07-10T06:41:37.815Z] Stop (5 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:37.815Z] Start: Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:37.818Z] 
+[2026-07-10T06:41:37.818Z] 
+[2026-07-10T06:41:37.818Z] Stop (3 ms): Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:37.818Z] Start: Run in container: mkdir -p '/home/codespace/.vscode-remote/bin' && ln -snf '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f' '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:37.829Z] 
+[2026-07-10T06:41:37.829Z] 
+[2026-07-10T06:41:37.829Z] Stop (11 ms): Run in container: mkdir -p '/home/codespace/.vscode-remote/bin' && ln -snf '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f' '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:37.830Z] Start: Run in container: /bin/sh
+[2026-07-10T06:41:37.840Z] Start: Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:41:37.840Z] Start: Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:37.845Z] 
+[2026-07-10T06:41:37.845Z] 
+[2026-07-10T06:41:37.845Z] Stop (5 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:41:37.845Z] Start: Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:41:38.003Z] 
+[2026-07-10T06:41:38.003Z] 
+[2026-07-10T06:41:38.003Z] Stop (163 ms): Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:38.509Z] 
+[2026-07-10T06:41:38.510Z] 
+[2026-07-10T06:41:38.510Z] Stop (665 ms): Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:41:38.510Z] userEnvProbe: loginInteractiveShell (default)
+[2026-07-10T06:41:38.511Z] Start: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:41:38.513Z] 
+[2026-07-10T06:41:38.513Z] 
+[2026-07-10T06:41:38.513Z] Exit code 1
+[2026-07-10T06:41:38.513Z] Stop (2 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:41:38.513Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:41:38.513Z] userEnvProbe: not found in cache
+[2026-07-10T06:41:38.514Z] userEnvProbe shell: /bin/bash
+[2026-07-10T06:41:38.514Z] Start: Run in container: /bin/bash -lic echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff; cat /proc/self/environ; echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff
+[2026-07-10T06:41:39.671Z] Stop (1158 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:41:39.676Z] Start: Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:41:39.700Z] Stop (24 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:41:39.706Z] Running extension host agents:
+[]
+[2026-07-10T06:41:39.706Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null || (umask 377 && echo '5d2896b7-12e8-4f80-a6ad-de1394b454bd' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f-0c66d6e4-c98d-4958-ac02-023c473de289' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f-0c66d6e4-c98d-4958-ac02-023c473de289' '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f-0c66d6e4-c98d-4958-ac02-023c473de289' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f')
+[2026-07-10T06:41:39.886Z] 5d2896b7-12e8-4f80-a6ad-de1394b454bd
+[2026-07-10T06:41:39.887Z] 
+[2026-07-10T06:41:39.887Z] Stop (181 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null || (umask 377 && echo '5d2896b7-12e8-4f80-a6ad-de1394b454bd' >'/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f-0c66d6e4-c98d-4958-ac02-023c473de289' && mv -n '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f-0c66d6e4-c98d-4958-ac02-023c473de289' '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f' && rm -f '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f-0c66d6e4-c98d-4958-ac02-023c473de289' && cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f')
+[2026-07-10T06:41:39.887Z] Start: Starting VS Code Server
+[2026-07-10T06:41:39.887Z] Start: Preparing Extensions
+[2026-07-10T06:41:39.887Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } 2> /dev/null
+[2026-07-10T06:41:39.892Z] 
+[2026-07-10T06:41:39.892Z] 
+[2026-07-10T06:41:39.892Z] Stop (5 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.installExtensionsMarker' ; } 2> /dev/null
+[2026-07-10T06:41:39.893Z] Start: Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[2026-07-10T06:41:39.902Z] 
+[2026-07-10T06:41:39.902Z] 
+[2026-07-10T06:41:39.902Z] Stop (9 ms): Run in container: mkdir -p '/vscode/extensionsCache' && chown -R codespace /vscode/extensionsCache
+[2026-07-10T06:41:39.902Z] Start: Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[2026-07-10T06:41:39.909Z] 
+[2026-07-10T06:41:39.909Z] 
+[2026-07-10T06:41:39.909Z] Stop (7 ms): Run in container: mkdir -p '/vscode/extensionsCache' && ln -s -T '/vscode/extensionsCache' '/home/codespace/.vscode-remote/extensionsCache' || ********
+[2026-07-10T06:41:39.909Z] Stop (22 ms): Preparing Extensions
+[2026-07-10T06:41:40.518Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:41:41.255Z] Stop (737 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:41:41.256Z] userEnvProbe is taking longer than 2 seconds. Process tree:
+  444: /bin/bash -lic echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff; cat /proc/self/environ; echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff 
+    524: /bin/bash -lic echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff; cat /proc/self/environ; echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff 
+      595: /bin/bash -lic echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff; cat /proc/self/environ; echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff 
+        597: /bin/bash -lic echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff; cat /proc/self/environ; echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff 
+          730: /bin/bash -lic echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff; cat /proc/self/environ; echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff 
+            741: node -v 
+,        598: tail -1 
+[2026-07-10T06:41:47.111Z] Stop (8597 ms): Run in container: /bin/bash -lic echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff; cat /proc/self/environ; echo -n a793f00c-0f04-4339-a440-7dcdf4e6dbff
+[2026-07-10T06:41:47.112Z] a793f00c-0f04-4339-a440-7dcdf4e6dbffSHELL=/bin/bash NUGET_XMLDOC_MODE=skip NVM_INC=/usr/local/share/nvm/versions/node/v24.14.0/include/node rvm_prefix=/usr/local HOSTNAME=codespaces-4c5ce2 RepositoryName=Github-Examples JAVA_ROOT=/home/codespace/java JAVA_HOME=/usr/local/sdkman/candidates/java/current DOTNET_ROOT=/usr/share/dotnet CODESPACES=******** GRADLE_HOME=/usr/local/sdkman/candidates/gradle/current PYTHON_ROOT=/home/codespace/.python rvm_stored_umask=0022 NVS_DIR=/usr/local/nvs NVS_OS=linux DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1 MY_RUBY_HOME=/usr/local/rvm/rubies/ruby-3.4.7 NVS_USE_XZ=1 SDKMAN_CANDIDATES_DIR=/usr/local/sdkman/candidates SDKMAN_BROKER_API=https://broker.sdkman.io RUBY_VERSION=ruby-3.4.7 PWD=/workspaces/Github-Examples PIPX_BIN_DIR=/usr/local/py-utils/bin rvm_version=1.29.12 (latest) ORYX_DIR=/usr/local/oryx rvm_user_install_flag=0 ContainerVersion=13 HUGO_ROOT=/home/codespace/.hugo NPM_GLOBAL=/home/codespace/.npm-global HOME=/home/codespace LANG=C.UTF-8 LS_COLORS= DYNAMIC_INSTALL_ROOT_DIR=/opt NVM_SYMLINK_CURRENT=******** PHP_PATH=/usr/local/php/current DEBIAN_FLAVOR=focal-scm PHP_ROOT=/home/codespace/.php ORYX_ENV_TYPE=vsonline-present HUGO_DIR=/usr/local/hugo/bin DOCKER_BUILDKIT=1 GOROOT=/usr/local/go SHELL_LOGGED_IN=******** PYTHON_PATH=/usr/local/python/current NVM_DIR=/usr/local/share/nvm rvm_bin_path=/usr/local/rvm/bin GEM_PATH=/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global GEM_HOME=/usr/local/rvm/gems/ruby-3.4.7 LESSCLOSE=/usr/bin/lesspipe %s %s NVS_ROOT=/usr/local/nvs LESSOPEN=| /usr/bin/lesspipe %s USER=codespace NODE_ROOT=/home/codespace/nvm PYTHONIOENCODING=UTF-8 NVS_HOME=/usr/local/nvs PIPX_HOME=/usr/local/py-utils rvm_loaded_flag=1 CONDA_SCRIPT=/opt/conda/etc/profile.d/conda.sh MAVEN_HOME=/usr/local/sdkman/candidates/maven/current SDKMAN_DIR=/usr/local/sdkman SHLVL=1 NVM_CD_FLAGS= ORYX_SDK_STORAGE_BASE_URL=https://oryx-cdn.microsoft.io CONDA_DIR=/opt/conda PROMPT_DIRTRIM=4 SDKMAN_CANDIDATES_API=https://api.sdkman.io/2 DOTNET_RUNNING_IN_CONTAINER=******** DOTNET_USE_POLLING_FILE_WATCHER=******** ENABLE_DYNAMIC_INSTALL=******** MAVEN_ROOT=/home/codespace/.maven ORYX_PREFER_USER_INSTALLED_SDKS=******** JUPYTERLAB_PATH=/home/codespace/.local/bin DEBUGINFOD_URLS=https://debuginfod.ubuntu.com  RVM_PATH=/usr/local/rvm RAILS_DEVELOPMENT_HOSTS=.githubpreview.dev,.preview.********,.******** RUBY_ROOT=/home/codespace/.ruby RUBY_HOME=/usr/local/rvm/rubies/default PATH=/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin SDKMAN_PLATFORM=linuxx64 NVM_BIN=/usr/local/share/nvm/versions/node/v24.14.0/bin IRBRC=/usr/local/rvm/rubies/ruby-3.4.7/.irbrc rvm_path=/usr/local/rvm OLDPWD=/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f GOPATH=/go BASH_FUNC_nvs%%=() {  if [ -z "${NVS_HOME}" ]; then
+ export NVS_HOME="${NVS_ROOT}";
+ fi;
+ export NVS_POSTSCRIPT="${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d" ").sh";
+ local NODE_EXE="node";
+ if [ "${NVS_OS}" = "win" ]; then
+ NODE_EXE="node.exe";
+ fi;
+ local NODE_PATH="${NVS_HOME}/cache/${NODE_EXE}";
+ if [ ! -f "${NODE_PATH}" ]; then
+ local NODE_VERSION="$(grep '"bootstrap" *:' "${NVS_ROOT}/defaults.json" | sed -e 's/.*: *"//' -e 's/"[^\n]*//' -e 's/.*\///')";
+ local NODE_REMOTE="$(grep '"bootstrap" *:' "${NVS_ROOT}/defaults.json" | sed -e 's/.*: *"//' -e 's/"[^\n]*//' -e 's/\/.*//')";
+ local NODE_BASE_URI="$(grep "\"${NODE_REMOTE}\" *:" "${NVS_ROOT}/defaults.json" | sed -e 's/.*: *"//' -e 's/"[^\n]*//')";
+ local NODE_ARCHIVE_EXT=".tar.gz";
+ local TAR_FLAGS="-zxvf";
+ if [ "${NVS_OS}" = "win" ]; then
+ NODE_ARCHIVE_EXT=".7z";
+ else
+ if [ "${NVS_USE_XZ}" = "1" ]; then
+ NODE_ARCHIVE_EXT=".tar.xz";
+ TAR_FLAGS="-Jxvf";
+ fi;
+ fi;
+ local NODE_ARCH="$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')";
+ if [ "${NVS_OS}" = "aix" ]; then
+ NODE_ARCH="ppc64";
+ fi;
+ local NODE_FULLNAME="node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}";
+ local NODE_URI="${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}";
+ local NODE_ARCHIVE="${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}";
+ if [ ! -d "${NVS_HOME}/cache" ]; then
+ command mkdir -p "${NVS_HOME}/cache";
+ fi;
+ echo "Downloading bootstrap node from ${NODE_URI}";
+ if type noglob > /dev/null 2>&1; then
+ noglob curl -L -# "${NODE_URI}" -o "${NODE_ARCHIVE}";
+ else
+ curl -L -# "${NODE_URI}" -o "${NODE_ARCHIVE}";
+ fi;
+ if [ ! -f "${NODE_ARCHIVE}" ] && [ "${NODE_ARCHIVE_EXT}" = ".tar.xz" ]; then
+ NODE_ARCHIVE_EXT=".tar.gz";
+ TAR_FLAGS="-zxvf";
+ NODE_ARCHIVE="${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}";
+ echo "Retry download bootstrap node from ${NODE_URI} in gz format";
+ if type noglob > /dev/null 2>&1; then
+ noglob curl -L -# "${NODE_URI}" -o "${NODE_ARCHIVE}";
+ else
+ curl -L -# "${NODE_URI}" -o "${NODE_ARCHIVE}";
+ fi;
+ fi;
+ if [ ! -f "${NODE_ARCHIVE}" ]; then
+ echo "Failed to download node binary.";
+ return 1;
+ fi;
+ if [ "${NVS_OS}" = "win" ]; then
+ "${NVS_ROOT}/tools/7-Zip/7zr.exe" e "-o${NVS_HOME}/cache" -y "${NODE_ARCHIVE}" "${NODE_FULLNAME}/${NODE_EXE}" > /dev/null 2>&1;
+ else
+ if [ "${NVS_OS}" = "aix" ]; then
+ gunzip "${NODE_ARCHIVE}" | tar -xvC "${NVS_HOME}/cache" "${NODE_FULLNAME}/bin/${NODE_EXE}" > /dev/null 2>&1;
+ else
+ tar $TAR_FLAGS "${NODE_ARCHIVE}" -C "${NVS_HOME}/cache" "${NODE_FULLNAME}/bin/${NODE_EXE}" > /dev/null 2>&1;
+ fi;
+ mv "${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}" "${NVS_HOME}/cache/${NODE_EXE}" > /dev/null 2>&1;
+ rm -r "${NVS_HOME}/cache/${NODE_FULLNAME}" > /dev/null 2>&1;
+ fi;
+ if [ ! -f "${NODE_PATH}" ]; then
+ echo "Failed to setup node binary.";
+ return 1;
+ fi;
+ echo "";
+ fi;
+ local EXIT_CODE=0;
+ case "$@" in 
+ "cd")
+ local DIR=$PWD;
+ while [ "$DIR" != "" -a ! \( -e "$DIR/.node-version" -o -e "$DIR/.nvmrc" \) ]; do
+ if [ "$DIR" = "/" ]; then
+ DIR=;
+ else
+ DIR=$(dirname "$DIR");
+ fi;
+ done;
+ if [ "$DIR" != "$NVS_AUTO_DIRECTORY" ]; then
+ command "${NODE_PATH}" "${NVS_ROOT}/lib/index.js" auto;
+ EXIT_CODE=$?;
+ fi;
+ export NVS_AUTO_DIRECTORY=$DIR
+ ;;
+ *)
+ command "${NODE_PATH}" "${NVS_ROOT}/lib/index.js" "$@";
+ EXIT_CODE=$?
+ ;;
+ esac;
+ if [ ${EXIT_CODE} = 2 ]; then
+ rm "${NODE_PATH}";
+ nvs $@;
+ fi;
+ if [ -f "${NVS_POSTSCRIPT}" ]; then
+ . "${NVS_POSTSCRIPT}";
+ command rm "${NVS_POSTSCRIPT}";
+ unset NVS_POSTSCRIPT;
+ fi;
+ return $EXIT_CODE
+} BASH_FUNC_nvsudo%%=() {  local NVS_CURRENT=`nvs which`;
+ if [ -n "${NVS_CURRENT}" ]; then
+ NVS_CURRENT=`dirname "${NVS_CURRENT}"`;
+ fi;
+ sudo "NVS_CURRENT=${NVS_CURRENT}" "${NVS_ROOT}/nvs" $*
+} _=/usr/bin/cat a793f00c-0f04-4339-a440-7dcdf4e6dbff
+[2026-07-10T06:41:47.112Z] bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+
+[2026-07-10T06:41:47.114Z] userEnvProbe parsed: {
+  "SHELL": "/bin/bash",
+  "NUGET_XMLDOC_MODE": "skip",
+  "NVM_INC": "/usr/local/share/nvm/versions/node/v24.14.0/include/node",
+  "rvm_prefix": "/usr/local",
+  "HOSTNAME": "codespaces-4c5ce2",
+  "RepositoryName": "Github-Examples",
+  "JAVA_ROOT": "/home/codespace/java",
+  "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+  "DOTNET_ROOT": "/usr/share/dotnet",
+  "CODESPACES": "********",
+  "GRADLE_HOME": "/usr/local/sdkman/candidates/gradle/current",
+  "PYTHON_ROOT": "/home/codespace/.python",
+  "rvm_stored_umask": "0022",
+  "NVS_DIR": "/usr/local/nvs",
+  "NVS_OS": "linux",
+  "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+  "MY_RUBY_HOME": "/usr/local/rvm/rubies/ruby-3.4.7",
+  "NVS_USE_XZ": "1",
+  "SDKMAN_CANDIDATES_DIR": "/usr/local/sdkman/candidates",
+  "SDKMAN_BROKER_API": "https://broker.sdkman.io",
+  "RUBY_VERSION": "ruby-3.4.7",
+  "PWD": "/workspaces/Github-Examples",
+  "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+  "rvm_version": "1.29.12 (latest)",
+  "ORYX_DIR": "/usr/local/oryx",
+  "rvm_user_install_flag": "0",
+  "ContainerVersion": "13",
+  "HUGO_ROOT": "/home/codespace/.hugo",
+  "NPM_GLOBAL": "/home/codespace/.npm-global",
+  "HOME": "/home/codespace",
+  "LANG": "C.UTF-8",
+  "LS_COLORS": "",
+  "DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+  "NVM_SYMLINK_CURRENT": "********",
+  "PHP_PATH": "/usr/local/php/current",
+  "DEBIAN_FLAVOR": "focal-scm",
+  "PHP_ROOT": "/home/codespace/.php",
+  "ORYX_ENV_TYPE": "vsonline-present",
+  "HUGO_DIR": "/usr/local/hugo/bin",
+  "DOCKER_BUILDKIT": "1",
+  "GOROOT": "/usr/local/go",
+  "SHELL_LOGGED_IN": "********",
+  "PYTHON_PATH": "/usr/local/python/current",
+  "NVM_DIR": "/usr/local/share/nvm",
+  "rvm_bin_path": "/usr/local/rvm/bin",
+  "GEM_PATH": "/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global",
+  "GEM_HOME": "/usr/local/rvm/gems/ruby-3.4.7",
+  "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+  "NVS_ROOT": "/usr/local/nvs",
+  "LESSOPEN": "| /usr/bin/lesspipe %s",
+  "USER": "codespace",
+  "NODE_ROOT": "/home/codespace/nvm",
+  "PYTHONIOENCODING": "UTF-8",
+  "NVS_HOME": "/usr/local/nvs",
+  "PIPX_HOME": "/usr/local/py-utils",
+  "rvm_loaded_flag": "1",
+  "CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+  "MAVEN_HOME": "/usr/local/sdkman/candidates/maven/current",
+  "SDKMAN_DIR": "/usr/local/sdkman",
+  "SHLVL": "1",
+  "NVM_CD_FLAGS": "",
+  "ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+  "CONDA_DIR": "/opt/conda",
+  "PROMPT_DIRTRIM": "4",
+  "SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+  "DOTNET_RUNNING_IN_CONTAINER": "********",
+  "DOTNET_USE_POLLING_FILE_WATCHER": "********",
+  "ENABLE_DYNAMIC_INSTALL": "********",
+  "MAVEN_ROOT": "/home/codespace/.maven",
+  "ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+  "JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+  "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+  "RVM_PATH": "/usr/local/rvm",
+  "RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+  "RUBY_ROOT": "/home/codespace/.ruby",
+  "RUBY_HOME": "/usr/local/rvm/rubies/default",
+  "PATH": "/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin",
+  "SDKMAN_PLATFORM": "linuxx64",
+  "NVM_BIN": "/usr/local/share/nvm/versions/node/v24.14.0/bin",
+  "IRBRC": "/usr/local/rvm/rubies/ruby-3.4.7/.irbrc",
+  "rvm_path": "/usr/local/rvm",
+  "OLDPWD": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+  "GOPATH": "/go",
+  "BASH_FUNC_nvs%%": "() {  if [ -z \"${NVS_HOME}\" ]; then\n export NVS_HOME=\"${NVS_ROOT}\";\n fi;\n export NVS_POSTSCRIPT=\"${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d\" \").sh\";\n local NODE_EXE=\"node\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_EXE=\"node.exe\";\n fi;\n local NODE_PATH=\"${NVS_HOME}/cache/${NODE_EXE}\";\n if [ ! -f \"${NODE_PATH}\" ]; then\n local NODE_VERSION=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/.*\\///')\";\n local NODE_REMOTE=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/\\/.*//')\";\n local NODE_BASE_URI=\"$(grep \"\\\"${NODE_REMOTE}\\\" *:\" \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//')\";\n local NODE_ARCHIVE_EXT=\".tar.gz\";\n local TAR_FLAGS=\"-zxvf\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_ARCHIVE_EXT=\".7z\";\n else\n if [ \"${NVS_USE_XZ}\" = \"1\" ]; then\n NODE_ARCHIVE_EXT=\".tar.xz\";\n TAR_FLAGS=\"-Jxvf\";\n fi;\n fi;\n local NODE_ARCH=\"$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')\";\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n NODE_ARCH=\"ppc64\";\n fi;\n local NODE_FULLNAME=\"node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}\";\n local NODE_URI=\"${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n local NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n if [ ! -d \"${NVS_HOME}/cache\" ]; then\n command mkdir -p \"${NVS_HOME}/cache\";\n fi;\n echo \"Downloading bootstrap node from ${NODE_URI}\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ] && [ \"${NODE_ARCHIVE_EXT}\" = \".tar.xz\" ]; then\n NODE_ARCHIVE_EXT=\".tar.gz\";\n TAR_FLAGS=\"-zxvf\";\n NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n echo \"Retry download bootstrap node from ${NODE_URI} in gz format\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ]; then\n echo \"Failed to download node binary.\";\n return 1;\n fi;\n if [ \"${NVS_OS}\" = \"win\" ]; then\n \"${NVS_ROOT}/tools/7-Zip/7zr.exe\" e \"-o${NVS_HOME}/cache\" -y \"${NODE_ARCHIVE}\" \"${NODE_FULLNAME}/${NODE_EXE}\" > /dev/null 2>&1;\n else\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n gunzip \"${NODE_ARCHIVE}\" | tar -xvC \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n else\n tar $TAR_FLAGS \"${NODE_ARCHIVE}\" -C \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n fi;\n mv \"${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}\" \"${NVS_HOME}/cache/${NODE_EXE}\" > /dev/null 2>&1;\n rm -r \"${NVS_HOME}/cache/${NODE_FULLNAME}\" > /dev/null 2>&1;\n fi;\n if [ ! -f \"${NODE_PATH}\" ]; then\n echo \"Failed to setup node binary.\";\n return 1;\n fi;\n echo \"\";\n fi;\n local EXIT_CODE=0;\n case \"$@\" in \n \"cd\")\n local DIR=$PWD;\n while [ \"$DIR\" != \"\" -a ! \\( -e \"$DIR/.node-version\" -o -e \"$DIR/.nvmrc\" \\) ]; do\n if [ \"$DIR\" = \"/\" ]; then\n DIR=;\n else\n DIR=$(dirname \"$DIR\");\n fi;\n done;\n if [ \"$DIR\" != \"$NVS_AUTO_DIRECTORY\" ]; then\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" auto;\n EXIT_CODE=$?;\n fi;\n export NVS_AUTO_DIRECTORY=$DIR\n ;;\n *)\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" \"$@\";\n EXIT_CODE=$?\n ;;\n esac;\n if [ ${EXIT_CODE} = 2 ]; then\n rm \"${NODE_PATH}\";\n nvs $@;\n fi;\n if [ -f \"${NVS_POSTSCRIPT}\" ]; then\n . \"${NVS_POSTSCRIPT}\";\n command rm \"${NVS_POSTSCRIPT}\";\n unset NVS_POSTSCRIPT;\n fi;\n return $EXIT_CODE\n}",
+  "BASH_FUNC_nvsudo%%": "() {  local NVS_CURRENT=`nvs which`;\n if [ -n \"${NVS_CURRENT}\" ]; then\n NVS_CURRENT=`dirname \"${NVS_CURRENT}\"`;\n fi;\n sudo \"NVS_CURRENT=${NVS_CURRENT}\" \"${NVS_ROOT}/nvs\" $*\n}",
+  "_": "/usr/bin/cat"
+}
+[2026-07-10T06:41:47.114Z] userEnvProbe PATHs:
+Probe:     '/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin'
+Container: '/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet'
+[2026-07-10T06:41:47.115Z] Start: Run in container: mkdir -p '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache' && cat > '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json' << 'envJSON'
+[2026-07-10T06:41:47.125Z] 
+[2026-07-10T06:41:47.126Z] 
+[2026-07-10T06:41:47.126Z] Stop (11 ms): Run in container: mkdir -p '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache' && cat > '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json' << 'envJSON'
+[2026-07-10T06:41:47.127Z] Start: Run in container:
+[2026-07-10T06:41:47.720Z] *
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+[2026-07-10T06:41:47.734Z] Server bound to 127.0.0.1:38987 (IPv4)
+Extension host agent listening on 38987
+
+[2026-07-10T06:41:47.734Z] Stop (7847 ms): Starting VS Code Server
+[2026-07-10T06:41:47.734Z] Start: Run in container: echo 38987 >'/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:47.738Z] 
+[2026-07-10T06:41:47.739Z] 
+[2026-07-10T06:41:47.739Z] Stop (5 ms): Run in container: echo 38987 >'/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:41:47.739Z] Stop (10282 ms): Resolving Remote for VSC start
+[2026-07-10T06:41:47.868Z] Ignoring option 'skip-requirements-check': not supported for server.
+[2026-07-10T06:41:47.902Z] [06:41:47] Remote configuration data at /home/codespace/.vscode-remote
+[06:41:47] process arguments: {
+  _: [],
+  host: '127.0.0.1',
+  port: '0',
+  'connection-token-file': '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f',
+  'without-connection-token': false,
+  'disable-websocket-compression': false,
+  'print-startup-performance': false,
+  'print-ip-address': false,
+  'accept-server-license-terms': ********,
+  'server-data-dir': '/home/codespace/.vscode-remote',
+  'enable-smoke-test-driver': false,
+  'disable-telemetry': false,
+  'disable-experiments': false,
+  'disable-workspace-trust': false,
+  log: [ 'trace' ],
+  'force-disable-user-env': ********,
+  'enable-sync': false,
+  'use-test-resolver': false,
+  'extensions-download-dir': '/home/codespace/.vscode-remote/extensionsCache',
+  'install-extension': [
+    'HashiCorp.terraform',
+    'mhutchie.git-graph',
+    'phil294.git-log--graph'
+  ],
+  'install-builtin-extension': [
+    'GitHub.vscode-pull-request-github',
+    'github.github-vscode-theme',
+    'github.codespaces'
+  ],
+  'update-extensions': false,
+  'list-extensions': false,
+  'show-versions': false,
+  force: false,
+  'do-not-sync': ********,
+  'do-not-include-pack-dependencies': false,
+  'pre-release': false,
+  'start-server': ********,
+  'enable-remote-auto-shutdown': ********,
+  'remote-auto-shutdown-without-delay': false,
+  'use-host-proxy': false,
+  'without-browser-env-var': false,
+  help: false,
+  version: false,
+  'user-data-dir': '/home/codespace/.vscode-remote/data',
+  'builtin-extensions-dir': '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f/extensions',
+  'extensions-dir': '/home/codespace/.vscode-remote/extensions',
+  logsPath: '/home/codespace/.vscode-remote/data/logs/20260710T064147'
+}
+[06:41:47] 
+
+
+
+
+[2026-07-10T06:41:48.141Z] [06:41:48] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/data/Machine (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>),/home/codespace/.vscode-remote/data/Machine/settings.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[2026-07-10T06:41:48.198Z] [06:41:48] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine'
+[2026-07-10T06:41:48.215Z] [reconnection-grace-time] No CLI argument provided, using default: 10800000ms (10800s)
+[2026-07-10T06:41:48.219Z] [06:41:48] ServerLifetime: scheduling shutdown timer
+[2026-07-10T06:41:48.219Z] [06:41:48] [AgentHostChannel] Registered unavailable IPC channel 'agentHostProxy': no --agent-host-bridge-port / --agent-host-bridge-path set.
+[2026-07-10T06:41:48.221Z] [06:41:48] Installing builtin extensions passed via args...
+[2026-07-10T06:41:48.223Z] [06:41:48] Started scanning system extensions
+[2026-07-10T06:41:48.225Z] [06:41:48] Started scanning user extensions ra {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: null
+}
+[2026-07-10T06:41:48.226Z] [06:41:48] Installing extensions passed via args...
+[2026-07-10T06:41:48.232Z] [06:41:48] Extension host agent started.
+[2026-07-10T06:41:48.275Z] [06:41:48] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/data/Machine/settings.json'
+[2026-07-10T06:41:48.290Z] [06:41:48] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[2026-07-10T06:41:48.295Z] [06:41:48] Started initializing default profile extensions in extensions installation folder. file:///home/codespace/.vscode-remote/extensions
+[2026-07-10T06:41:48.319Z] [06:41:48] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ms-azuretools.vscode-docker-2.0.0
+[2026-07-10T06:41:48.319Z] [06:41:48] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ms-toolsai.jupyter-2026.6.2026070801
+[2026-07-10T06:41:48.320Z] [06:41:48] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/dbaeumer.vscode-eslint-3.0.33
+[06:41:48] Deleting from cache /home/codespace/.vscode-remote/extensionsCache/ms-python.python-2026.5.2026070801
+[2026-07-10T06:41:48.321Z] [06:41:48] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions'
+[2026-07-10T06:41:48.361Z] [06:41:48] ComputeTargetPlatform: linux-x64
+[2026-07-10T06:41:48.411Z] [06:41:48] [File Watcher (node.js)] [raw] ["rename"] extensions.json
+[2026-07-10T06:41:48.412Z] [06:41:48] [File Watcher (node.js)] [raw] ["change"] extensions.json
+[2026-07-10T06:41:48.413Z] [06:41:48] [File Watcher (node.js)] [ADDED] /home/codespace/.vscode-remote/extensions/extensions.json
+[2026-07-10T06:41:48.459Z] [06:41:48] Scanned system extensions: 35
+[06:41:48] Completed initializing default profile extensions in extensions installation folder. file:///home/codespace/.vscode-remote/extensions
+[2026-07-10T06:41:48.463Z] [06:41:48] [File Watcher (node.js)] Request to start watching: /home/codespace/.vscode-remote/extensions/extensions.json (excludes: <none>, includes: <all>, filter: <none>, correlationId: <none>)
+[2026-07-10T06:41:48.464Z] [06:41:48] Scanned user extensions: 0
+[2026-07-10T06:41:48.490Z] [06:41:48] [File Watcher (node.js)]  >> normalized [ADDED] /home/codespace/.vscode-remote/extensions/extensions.json
+[2026-07-10T06:41:48.498Z] [06:41:48] [File Watcher (node.js)] Started watching: '/home/codespace/.vscode-remote/extensions/extensions.json'
+[2026-07-10T06:41:48.506Z] [06:41:48] ComputeTargetPlatform: linux-x64
+[2026-07-10T06:41:48.513Z] [06:41:48] [File Watcher (node.js)] [CHANGED] /home/codespace/.vscode-remote/extensions/extensions.json
+[2026-07-10T06:41:48.594Z] [06:41:48] [File Watcher (node.js)]  >> normalized [CHANGED] /home/codespace/.vscode-remote/extensions/extensions.json
+[2026-07-10T06:41:49.024Z] (node:1578) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2026-07-10T06:41:49.156Z] [06:41:49] [127.0.0.1][b8b8bad1][ManagementConnection] New connection established.
+[2026-07-10T06:41:49.229Z] [06:41:49] [127.0.0.1][3defafca][ExtensionHostConnection] - startParams language: ko
+[06:41:49] [127.0.0.1][3defafca][ExtensionHostConnection] - startParams env: {}
+[06:41:49] [127.0.0.1][3defafca][ExtensionHostConnection] New connection established.
+[06:41:49] ServerLifetime: consumer 'ExtensionHost:3defafca' active (total: 1)
+[06:41:49] ServerLifetime: cancelling shutdown timer
+[06:41:49] [127.0.0.1][3defafca][ExtensionHostConnection] Starting extension host process...
+[06:41:49] resolveShellEnv(): skipped (--force-disable-user-env)
+[06:41:49] [reconnection-grace-time] Setting VSCODE_RECONNECTION_GRACE_TIME env var for extension host: 10800000ms (10800s)
+[2026-07-10T06:41:49.239Z] [06:41:49] [127.0.0.1][3defafca][ExtensionHostConnection] <1611> Launched Extension Host Process.
+[2026-07-10T06:41:49.385Z] [06:41:49] [reconnection-grace-time] Server sending grace time to client: 10800000ms (10800s)
+[2026-07-10T06:41:49.387Z] [06:41:49] ExtensionManagementService.updateControlCache
+[2026-07-10T06:41:49.392Z] [06:41:49] Started scanning system extensions
+[2026-07-10T06:41:49.393Z] [06:41:49] Started scanning user extensions ra {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[2026-07-10T06:41:49.394Z] [06:41:49] Started scanning user extensions ra {
+  scheme: 'file',
+  authority: '',
+  path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+  query: '',
+  fragment: '',
+  _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+  _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+}
+[2026-07-10T06:41:49.399Z] [06:41:49] [Marketplace] Setting manifest available
+[06:41:49] Scanning extensions using UI language: ko
+[2026-07-10T06:41:49.407Z] [06:41:49] resolveShellEnv(): skipped (--force-disable-user-env)
+[2026-07-10T06:41:49.409Z] [06:41:49] resolveShellEnv(): skipped (--force-disable-user-env)
+[06:41:49] resolveShellEnv(): skipped (--force-disable-user-env)
+[06:41:49] resolveShellEnv(): skipped (--force-disable-user-env)
+[2026-07-10T06:41:49.413Z] [06:41:49] #1: https://main.vscode-cdn.net/extensions/marketplace.json - begin GET NC { original: {}, headers: [Object: null prototype] {} }
+[2026-07-10T06:41:49.414Z] [06:41:49] #2: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/github/vscode-pull-request-github/latest - begin GET NC {
+  original: {
+    'X-Market-Client-Id': 'VSCode 1.128.0',
+    'User-Agent': 'VSCode 1.128.0 (Code)',
+    'X-Market-User-Id': 'c9c2ee69-d2a7-474a-9aaa-942d4f435976',
+    'VSCode-SessionId': '2324afea82676c3df3c2d9fa96d3ad89dde04bd19b154d8f91de1393491e6350',
+    'Content-Type': 'application/json',
+    Accept: 'application/json;api-version=7.2-preview',
+    'Accept-Encoding': 'gzip'
+  },
+  headers: [Object: null prototype] {
+    'X-Market-Client-Id': 'VSCode 1.128.0',
+    'User-Agent': 'VSCode 1.128.0 (Code)',
+    'X-Market-User-Id': 'c9c2ee69-d2a7-474a-9aaa-942d4f435976',
+    'VSCode-SessionId': '2324afea82676c3df3c2d9fa96d3ad89dde04bd19b154d8f91de1393491e6350',
+    'Content-Type': 'application/json',
+    Accept: 'application/json;api-version=7.2-preview',
+    'Accept-Encoding': 'gzip'
+  }
+}
+[2026-07-10T06:41:49.416Z] [06:41:49] #3: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/github/github-vscode-theme/latest - begin GET NC {
+  original: {
+    'X-Market-Client-Id': 'VSCode 1.128.0',
+    'User-Agent': 'VSCode 1.128.0 (Code)',
+    'X-Market-User-Id': 'c9c2ee69-d2a7-474a-9aaa-942d4f435976',
+    'VSCode-SessionId': '2324afea82676c3df3c2d9fa96d3ad89dde04bd19b154d8f91de1393491e6350',
+    'Content-Type': 'application/json',
+    Accept: 'application/json;api-version=7.2-preview',
+    'Accept-Encoding': 'gzip'
+  },
+  headers: [Object: null prototype] {
+    'X-Market-Client-Id': 'VSCode 1.128.0',
+    'User-Agent': 'VSCode 1.128.0 (Code)',
+    'X-Market-User-Id': 'c9c2ee69-d2a7-474a-9aaa-942d4f435976',
+    'VSCode-SessionId': '2324afea82676c3df3c2d9fa96d3ad89dde04bd19b154d8f91de1393491e6350',
+    'Content-Type': 'application/json',
+    Accept: 'application/json;api-version=7.2-preview',
+    'Accept-Encoding': 'gzip'
+  }
+}
+[2026-07-10T06:41:49.419Z] [06:41:49] #4: https://marketplace.visualstudio.com/_apis/public/gallery/vscode/github/codespaces/latest - begin GET NC {
+  original: {
+    'X-Market-Client-Id': 'VSCode 1.128.0',
+    'User-Agent': 'VSCode 1.128.0 (Code)',
+    'X-Market-User-Id': 'c9c2ee69-d2a7-474a-9aaa-942d4f435976',
+    'VSCode-SessionId': '2324afea82676c3df3c2d9fa96d3ad89dde04bd19b154d8f91de1393491e6350',
+    'Content-Type': 'application/json',
+    Accept: 'application/json;api-version=7.2-preview',
+    'Accept-Encoding': 'gzip'
+  },
+  headers: [Object: null prototype] {
+    'X-Market-Client-Id': 'VSCode 1.128.0',
+    'User-Agent': 'VSCode 1.128.0 (Code)',
+    'X-Market-User-Id': 'c9c2ee69-d2a7-474a-9aaa-942d4f435976',
+    'VSCode-SessionId': '2324afea82676c3df3c2d9fa96d3ad89dde04bd19b154d8f91de1393491e6350',
+    'Content-Type': 'application/json',
+    Accept: 'application/json;api-version=7.2-preview',
+    'Accept-Encoding': 'gzip'
+  }
+}
+[2026-07-10T06:41:49.455Z] [06:41:49] AbstractMcpResourceManagementService#populateLocalServers file:///home/codespace/.vscode-remote/data/User/mcp.json
+[2026-07-10T06:41:49.460Z] [06:41:49] Log level changed to info
+[2026-07-10T06:41:50.181Z] [06:41:50] Installing builtin extension 'github.vscode-pull-request-github'...
+[2026-07-10T06:41:50.245Z] [06:41:50] Installing builtin extension 'github.github-vscode-theme'...
+[2026-07-10T06:41:50.346Z] [06:41:50] Installing builtin extension 'github.codespaces'...
+[2026-07-10T06:41:50.353Z] [06:41:50] Getting Manifest... github.vscode-pull-request-github
+[2026-07-10T06:41:50.357Z] [06:41:50] Getting Manifest... github.github-vscode-theme
+[2026-07-10T06:41:50.360Z] [06:41:50] Getting Manifest... github.codespaces
+[2026-07-10T06:41:50.451Z] [06:41:50] [127.0.0.1][3defafca][ExtensionHostConnection] <1611> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[2026-07-10T06:41:50.653Z] [06:41:50] Installing extension: github.vscode-pull-request-github {
+  isMachineScoped: ********,
+  installPreReleaseVersion: false,
+  isBuiltin: ********,
+  installGivenVersion: false,
+  isApplicationScoped: ********,
+  profileLocation: ra {
+    scheme: 'file',
+    authority: '',
+    path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+    _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+  },
+  productVersion: { version: '1.128.0', date: '2026-07-07T15:14:24-07:00' }
+}
+[06:41:50] Installing extension: github.codespaces {
+  isMachineScoped: ********,
+  installPreReleaseVersion: false,
+  isBuiltin: ********,
+  installGivenVersion: false,
+  isApplicationScoped: ********,
+  profileLocation: ra {
+    scheme: 'file',
+    authority: '',
+    path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+    _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+  },
+  productVersion: { version: '1.128.0', date: '2026-07-07T15:14:24-07:00' }
+}
+[2026-07-10T06:41:50.653Z] [06:41:50] Installing extension: github.github-vscode-theme {
+  isMachineScoped: ********,
+  installPreReleaseVersion: false,
+  isBuiltin: ********,
+  installGivenVersion: false,
+  isApplicationScoped: ********,
+  profileLocation: ra {
+    scheme: 'file',
+    authority: '',
+    path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+    _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+  },
+  productVersion: { version: '1.128.0', date: '2026-07-07T15:14:24-07:00' }
+}
+[2026-07-10T06:42:02.629Z] [06:42:02] Extension signature verification result for github.codespaces: Success. Internal Code: 0. Executed: ********. Duration: 10824ms.
+[2026-07-10T06:42:02.731Z] [06:42:02] Extension signature verification result for github.vscode-pull-request-github: Success. Internal Code: 0. Executed: ********. Duration: 10406ms.
+[2026-07-10T06:42:02.761Z] [06:42:02] Extension signature verification result for github.github-vscode-theme: Success. Internal Code: 0. Executed: ********. Duration: 10941ms.
+[2026-07-10T06:42:02.895Z] [06:42:02] Extracted extension to file:///home/codespace/.vscode-remote/extensions/github.github-vscode-theme-6.3.5: github.github-vscode-theme
+[2026-07-10T06:42:02.962Z] [06:42:02] Renamed to /home/codespace/.vscode-remote/extensions/github.github-vscode-theme-6.3.5
+[2026-07-10T06:42:03.192Z] [06:42:03] Extracted extension to file:///home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.156.0: github.vscode-pull-request-github
+[2026-07-10T06:42:03.290Z] [06:42:03] Renamed to /home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.156.0
+[2026-07-10T06:42:03.375Z] [06:42:03] Extracted extension to file:///home/codespace/.vscode-remote/extensions/github.codespaces-1.18.15: github.codespaces
+[2026-07-10T06:42:03.442Z] [06:42:03] Renamed to /home/codespace/.vscode-remote/extensions/github.codespaces-1.18.15
+[2026-07-10T06:42:03.569Z] [06:42:03] Extension installed successfully: github.github-vscode-theme file:///home/codespace/.vscode-remote/extensions/extensions.json
+[06:42:03] Extension installed successfully: github.vscode-pull-request-github file:///home/codespace/.vscode-remote/extensions/extensions.json
+[06:42:03] Extension installed successfully: github.codespaces file:///home/codespace/.vscode-remote/extensions/extensions.json
+[2026-07-10T06:42:03.572Z] [06:42:03] Extension 'github.github-vscode-theme' v6.3.5 was successfully installed.
+[06:42:03] Extension 'github.vscode-pull-request-github' v0.156.0 was successfully installed.
+[06:42:03] Extension 'github.codespaces' v1.18.15 was successfully installed.
+[06:42:03] Installing extensions...
+[2026-07-10T06:42:03.719Z] [06:42:03] Installing extensions...
+[2026-07-10T06:42:03.983Z] [06:42:03] Installing extension 'ms-ceintl.vscode-language-pack-ko'...
+[2026-07-10T06:42:03.984Z] [06:42:03] Getting Manifest... ms-ceintl.vscode-language-pack-ko
+[2026-07-10T06:42:04.314Z] [06:42:04] Installing extension 'mhutchie.git-graph'...
+[2026-07-10T06:42:04.322Z] [06:42:04] Installing extension 'hashicorp.terraform'...
+[2026-07-10T06:42:04.339Z] [06:42:04] Installing extension 'phil294.git-log--graph'...
+[2026-07-10T06:42:04.340Z] [06:42:04] Getting Manifest... mhutchie.git-graph
+[06:42:04] Getting Manifest... hashicorp.terraform
+[06:42:04] Getting Manifest... phil294.git-log--graph
+[2026-07-10T06:42:04.382Z] [06:42:04] Installing extension: ms-ceintl.vscode-language-pack-ko {
+  isMachineScoped: ********,
+  isBuiltin: false,
+  installPreReleaseVersion: undefined,
+  installGivenVersion: false,
+  isApplicationScoped: ********,
+  profileLocation: ra {
+    scheme: 'file',
+    authority: '',
+    path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+    _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+  },
+  productVersion: { version: '1.128.0', date: '2026-07-07T15:14:24-07:00' }
+}
+[2026-07-10T06:42:04.386Z] [06:42:04] Installing extension: phil294.git-log--graph {
+  isMachineScoped: ********,
+  installPreReleaseVersion: false,
+  isApplicationScoped: ********,
+  isBuiltin: false,
+  installGivenVersion: false,
+  profileLocation: ra {
+    scheme: 'file',
+    authority: '',
+    path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+    _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+  },
+  productVersion: { version: '1.128.0', date: '2026-07-07T15:14:24-07:00' }
+}
+[2026-07-10T06:42:04.387Z] [06:42:04] Installing extension: mhutchie.git-graph {
+  isMachineScoped: ********,
+  installPreReleaseVersion: false,
+  isApplicationScoped: ********,
+  isBuiltin: false,
+  installGivenVersion: false,
+  profileLocation: ra {
+    scheme: 'file',
+    authority: '',
+    path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+    _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+  },
+  productVersion: { version: '1.128.0', date: '2026-07-07T15:14:24-07:00' }
+}
+[2026-07-10T06:42:04.388Z] [06:42:04] Installing extension: hashicorp.terraform {
+  isMachineScoped: ********,
+  installPreReleaseVersion: false,
+  isApplicationScoped: ********,
+  isBuiltin: false,
+  installGivenVersion: false,
+  profileLocation: ra {
+    scheme: 'file',
+    authority: '',
+    path: '/home/codespace/.vscode-remote/extensions/extensions.json',
+    query: '',
+    fragment: '',
+    _formatted: 'file:///home/codespace/.vscode-remote/extensions/extensions.json',
+    _fsPath: '/home/codespace/.vscode-remote/extensions/extensions.json'
+  },
+  productVersion: { version: '1.128.0', date: '2026-07-07T15:14:24-07:00' }
+}
+[2026-07-10T06:42:13.870Z] [06:42:13] Extension signature verification result for phil294.git-log--graph: Success. Internal Code: 0. Executed: ********. Duration: 8995ms.
+[2026-07-10T06:42:14.248Z] [06:42:14] Extension signature verification result for ms-ceintl.vscode-language-pack-ko: Success. Internal Code: 0. Executed: ********. Duration: 9461ms.
+[2026-07-10T06:42:14.330Z] [06:42:14] Extension signature verification result for mhutchie.git-graph: Success. Internal Code: 0. Executed: ********. Duration: 8252ms.
+[2026-07-10T06:42:15.178Z] [06:42:15] Extension signature verification result for hashicorp.terraform: Success. Internal Code: 0. Executed: ********. Duration: 9017ms.
+[2026-07-10T06:42:15.352Z] [06:42:15] Extracted extension to file:///home/codespace/.vscode-remote/extensions/phil294.git-log--graph-0.1.35: phil294.git-log--graph
+[2026-07-10T06:42:15.420Z] [06:42:15] Renamed to /home/codespace/.vscode-remote/extensions/phil294.git-log--graph-0.1.35
+[2026-07-10T06:42:15.639Z] [06:42:15] Extracted extension to file:///home/codespace/.vscode-remote/extensions/mhutchie.git-graph-1.30.0: mhutchie.git-graph
+[2026-07-10T06:42:15.670Z] [06:42:15] Renamed to /home/codespace/.vscode-remote/extensions/mhutchie.git-graph-1.30.0
+[2026-07-10T06:42:15.808Z] [06:42:15] Extracted extension to file:///home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-ko-1.128.2026070703: ms-ceintl.vscode-language-pack-ko
+[2026-07-10T06:42:15.833Z] [06:42:15] Renamed to /home/codespace/.vscode-remote/extensions/ms-ceintl.vscode-language-pack-ko-1.128.2026070703
+[2026-07-10T06:42:15.981Z] [06:42:15] Adding language packs from the extension ms-ceintl.vscode-language-pack-ko
+[2026-07-10T06:42:16.082Z] [06:42:16] Extension installed successfully: ms-ceintl.vscode-language-pack-ko file:///home/codespace/.vscode-remote/extensions/extensions.json
+[2026-07-10T06:42:16.084Z] [06:42:16] Extension 'ms-ceintl.vscode-language-pack-ko' v1.128.2026070703 was successfully installed.
+[2026-07-10T06:42:17.064Z] [06:42:17] Extracted extension to file:///home/codespace/.vscode-remote/extensions/hashicorp.terraform-2.39.4-linux-x64: hashicorp.terraform
+[2026-07-10T06:42:17.079Z] [06:42:17] Renamed to /home/codespace/.vscode-remote/extensions/hashicorp.terraform-2.39.4-linux-x64
+[2026-07-10T06:42:17.285Z] [06:42:17] Extension installed successfully: phil294.git-log--graph file:///home/codespace/.vscode-remote/extensions/extensions.json
+[06:42:17] Extension installed successfully: mhutchie.git-graph file:///home/codespace/.vscode-remote/extensions/extensions.json
+[06:42:17] Extension installed successfully: hashicorp.terraform file:///home/codespace/.vscode-remote/extensions/extensions.json
+[2026-07-10T06:42:17.289Z] [06:42:17] Extension 'phil294.git-log--graph' v0.1.35 was successfully installed.
+[2026-07-10T06:42:17.290Z] [06:42:17] Extension 'mhutchie.git-graph' v1.30.0 was successfully installed.
+[06:42:17] Extension 'hashicorp.terraform' v2.39.4 was successfully installed.
+[2026-07-10T06:42:38.146Z] @microsoft/vscode-dev-containers-cli 0.95.0.
+[2026-07-10T06:42:38.146Z] Start: Resolving Remote for VSC start
+[2026-07-10T06:42:38.156Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:42:38.255Z] Stop (99 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:42:38.257Z] Start: Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:42:38.315Z] Stop (58 ms): Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:42:38.318Z] Start: Inspecting container
+[2026-07-10T06:42:38.319Z] Stop (1 ms): Inspecting container
+[2026-07-10T06:42:38.321Z] Start: Run in container: /bin/sh
+[2026-07-10T06:42:38.328Z] Start: Run in container: uname -m
+[2026-07-10T06:42:38.450Z] x86_64
+[2026-07-10T06:42:38.451Z] 
+[2026-07-10T06:42:38.451Z] Stop (123 ms): Run in container: uname -m
+[2026-07-10T06:42:38.451Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:42:38.459Z] PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[2026-07-10T06:42:38.460Z] 
+[2026-07-10T06:42:38.460Z] Stop (9 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:42:38.460Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:42:38.505Z] Stop (45 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:42:38.508Z] Start: Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:42:38.511Z] 
+[2026-07-10T06:42:38.512Z] 
+[2026-07-10T06:42:38.512Z] Stop (4 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:42:38.513Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:42:38.515Z] 
+[2026-07-10T06:42:38.516Z] 
+[2026-07-10T06:42:38.516Z] Exit code 1
+[2026-07-10T06:42:38.516Z] Stop (3 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:42:38.516Z] Start: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-07-10T06:42:38.522Z] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This dev container includes the GitHub CLI (`gh`), which is pre-installed and available on the `PATH`. IMPORTANT: `gh api -f` does not support object values, use multiple `-f` flags with hierarchical keys and string values instead. When using GitHub actions `actions/upload-artifact` or `actions/download-artifact` use v4 or later."
+		},
+		{
+			"text": "This dev container includes the Terraform CLI and optionally TFLint and Terragrunt pre-installed and available on the `PATH`, along with the Terraform extension for Terraform development."
+		},
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu 24.04.4 LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	],
+	"terraform.languageServer.enable": ********,
+	"terraform.languageServer.args": [
+		"serve"
+	]
+}
+[2026-07-10T06:42:38.523Z] 
+[2026-07-10T06:42:38.523Z] Stop (7 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-07-10T06:42:38.526Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:42:38.528Z] 
+[2026-07-10T06:42:38.528Z] 
+[2026-07-10T06:42:38.528Z] Exit code 1
+[2026-07-10T06:42:38.529Z] Stop (3 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:42:38.529Z] Start: Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:38.531Z] 
+[2026-07-10T06:42:38.532Z] 
+[2026-07-10T06:42:38.532Z] Stop (3 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:38.532Z] Start: Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:38.534Z] 
+[2026-07-10T06:42:38.535Z] 
+[2026-07-10T06:42:38.535Z] Stop (3 ms): Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:38.535Z] Start: Run in container: /bin/sh
+[2026-07-10T06:42:38.541Z] Start: Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:42:38.541Z] Start: Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:38.544Z] 
+[2026-07-10T06:42:38.544Z] 
+[2026-07-10T06:42:38.544Z] Stop (3 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:42:38.544Z] Start: Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:42:38.703Z] 
+[2026-07-10T06:42:38.707Z] 
+[2026-07-10T06:42:38.707Z] Stop (166 ms): Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:38.930Z] 
+[2026-07-10T06:42:38.931Z] 
+[2026-07-10T06:42:38.931Z] Stop (387 ms): Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:42:38.932Z] userEnvProbe: loginInteractiveShell (default)
+[2026-07-10T06:42:38.935Z] Start: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:42:38.938Z] 
+[2026-07-10T06:42:38.939Z] 
+[2026-07-10T06:42:38.939Z] Stop (4 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:42:38.939Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:42:39.690Z] Stop (751 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:42:39.690Z] Start: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:42:39.698Z] {
+	"SHELL": "/bin/bash",
+	"NUGET_XMLDOC_MODE": "skip",
+	"NVM_INC": "/usr/local/share/nvm/versions/node/v24.14.0/include/node",
+	"rvm_prefix": "/usr/local",
+	"HOSTNAME": "codespaces-4c5ce2",
+	"RepositoryName": "Github-Examples",
+	"JAVA_ROOT": "/home/codespace/java",
+	"JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+	"DOTNET_ROOT": "/usr/share/dotnet",
+	"CODESPACES": "********",
+	"GRADLE_HOME": "/usr/local/sdkman/candidates/gradle/current",
+	"PYTHON_ROOT": "/home/codespace/.python",
+	"rvm_stored_umask": "0022",
+	"NVS_DIR": "/usr/local/nvs",
+	"NVS_OS": "linux",
+	"DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+	"MY_RUBY_HOME": "/usr/local/rvm/rubies/ruby-3.4.7",
+	"NVS_USE_XZ": "1",
+	"SDKMAN_CANDIDATES_DIR": "/usr/local/sdkman/candidates",
+	"SDKMAN_BROKER_API": "https://broker.sdkman.io",
+	"RUBY_VERSION": "ruby-3.4.7",
+	"PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+	"rvm_version": "1.29.12 (latest)",
+	"ORYX_DIR": "/usr/local/oryx",
+	"rvm_user_install_flag": "0",
+	"ContainerVersion": "13",
+	"HUGO_ROOT": "/home/codespace/.hugo",
+	"NPM_GLOBAL": "/home/codespace/.npm-global",
+	"HOME": "/home/codespace",
+	"LANG": "C.UTF-8",
+	"LS_COLORS": "",
+	"DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+	"NVM_SYMLINK_CURRENT": "********",
+	"PHP_PATH": "/usr/local/php/current",
+	"DEBIAN_FLAVOR": "focal-scm",
+	"PHP_ROOT": "/home/codespace/.php",
+	"ORYX_ENV_TYPE": "vsonline-present",
+	"HUGO_DIR": "/usr/local/hugo/bin",
+	"DOCKER_BUILDKIT": "1",
+	"GOROOT": "/usr/local/go",
+	"SHELL_LOGGED_IN": "********",
+	"PYTHON_PATH": "/usr/local/python/current",
+	"NVM_DIR": "/usr/local/share/nvm",
+	"rvm_bin_path": "/usr/local/rvm/bin",
+	"GEM_PATH": "/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global",
+	"GEM_HOME": "/usr/local/rvm/gems/ruby-3.4.7",
+	"LESSCLOSE": "/usr/bin/lesspipe %s %s",
+	"NVS_ROOT": "/usr/local/nvs",
+	"LESSOPEN": "| /usr/bin/lesspipe %s",
+	"USER": "codespace",
+	"NODE_ROOT": "/home/codespace/nvm",
+	"PYTHONIOENCODING": "UTF-8",
+	"NVS_HOME": "/usr/local/nvs",
+	"PIPX_HOME": "/usr/local/py-utils",
+	"rvm_loaded_flag": "1",
+	"CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+	"MAVEN_HOME": "/usr/local/sdkman/candidates/maven/current",
+	"SDKMAN_DIR": "/usr/local/sdkman",
+	"SHLVL": "1",
+	"NVM_CD_FLAGS": "",
+	"ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+	"CONDA_DIR": "/opt/conda",
+	"PROMPT_DIRTRIM": "4",
+	"SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+	"DOTNET_RUNNING_IN_CONTAINER": "********",
+	"DOTNET_USE_POLLING_FILE_WATCHER": "********",
+	"ENABLE_DYNAMIC_INSTALL": "********",
+	"MAVEN_ROOT": "/home/codespace/.maven",
+	"ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+	"JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+	"DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+	"RVM_PATH": "/usr/local/rvm",
+	"RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+	"RUBY_ROOT": "/home/codespace/.ruby",
+	"RUBY_HOME": "/usr/local/rvm/rubies/default",
+	"PATH": "/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin",
+	"SDKMAN_PLATFORM": "linuxx64",
+	"NVM_BIN": "/usr/local/share/nvm/versions/node/v24.14.0/bin",
+	"IRBRC": "/usr/local/rvm/rubies/ruby-3.4.7/.irbrc",
+	"rvm_path": "/usr/local/rvm",
+	"OLDPWD": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+	"GOPATH": "/go",
+	"BASH_FUNC_nvs%%": "() {  if [ -z \"${NVS_HOME}\" ]; then\n export NVS_HOME=\"${NVS_ROOT}\";\n fi;\n export NVS_POSTSCRIPT=\"${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d\" \").sh\";\n local NODE_EXE=\"node\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_EXE=\"node.exe\";\n fi;\n local NODE_PATH=\"${NVS_HOME}/cache/${NODE_EXE}\";\n if [ ! -f \"${NODE_PATH}\" ]; then\n local NODE_VERSION=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/.*\\///')\";\n local NODE_REMOTE=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/\\/.*//')\";\n local NODE_BASE_URI=\"$(grep \"\\\"${NODE_REMOTE}\\\" *:\" \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//')\";\n local NODE_ARCHIVE_EXT=\".tar.gz\";\n local TAR_FLAGS=\"-zxvf\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_ARCHIVE_EXT=\".7z\";\n else\n if [ \"${NVS_USE_XZ}\" = \"1\" ]; then\n NODE_ARCHIVE_EXT=\".tar.xz\";\n TAR_FLAGS=\"-Jxvf\";\n fi;\n fi;\n local NODE_ARCH=\"$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')\";\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n NODE_ARCH=\"ppc64\";\n fi;\n local NODE_FULLNAME=\"node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}\";\n local NODE_URI=\"${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n local NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n if [ ! -d \"${NVS_HOME}/cache\" ]; then\n command mkdir -p \"${NVS_HOME}/cache\";\n fi;\n echo \"Downloading bootstrap node from ${NODE_URI}\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ] && [ \"${NODE_ARCHIVE_EXT}\" = \".tar.xz\" ]; then\n NODE_ARCHIVE_EXT=\".tar.gz\";\n TAR_FLAGS=\"-zxvf\";\n NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n echo \"Retry download bootstrap node from ${NODE_URI} in gz format\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ]; then\n echo \"Failed to download node binary.\";\n return 1;\n fi;\n if [ \"${NVS_OS}\" = \"win\" ]; then\n \"${NVS_ROOT}/tools/7-Zip/7zr.exe\" e \"-o${NVS_HOME}/cache\" -y \"${NODE_ARCHIVE}\" \"${NODE_FULLNAME}/${NODE_EXE}\" > /dev/null 2>&1;\n else\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n gunzip \"${NODE_ARCHIVE}\" | tar -xvC \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n else\n tar $TAR_FLAGS \"${NODE_ARCHIVE}\" -C \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n fi;\n mv \"${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}\" \"${NVS_HOME}/cache/${NODE_EXE}\" > /dev/null 2>&1;\n rm -r \"${NVS_HOME}/cache/${NODE_FULLNAME}\" > /dev/null 2>&1;\n fi;\n if [ ! -f \"${NODE_PATH}\" ]; then\n echo \"Failed to setup node binary.\";\n return 1;\n fi;\n echo \"\";\n fi;\n local EXIT_CODE=0;\n case \"$@\" in \n \"cd\")\n local DIR=$PWD;\n while [ \"$DIR\" != \"\" -a ! \\( -e \"$DIR/.node-version\" -o -e \"$DIR/.nvmrc\" \\) ]; do\n if [ \"$DIR\" = \"/\" ]; then\n DIR=;\n else\n DIR=$(dirname \"$DIR\");\n fi;\n done;\n if [ \"$DIR\" != \"$NVS_AUTO_DIRECTORY\" ]; then\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" auto;\n EXIT_CODE=$?;\n fi;\n export NVS_AUTO_DIRECTORY=$DIR\n ;;\n *)\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" \"$@\";\n EXIT_CODE=$?\n ;;\n esac;\n if [ ${EXIT_CODE} = 2 ]; then\n rm \"${NODE_PATH}\";\n nvs $@;\n fi;\n if [ -f \"${NVS_POSTSCRIPT}\" ]; then\n . \"${NVS_POSTSCRIPT}\";\n command rm \"${NVS_POSTSCRIPT}\";\n unset NVS_POSTSCRIPT;\n fi;\n return $EXIT_CODE\n}",
+	"BASH_FUNC_nvsudo%%": "() {  local NVS_CURRENT=`nvs which`;\n if [ -n \"${NVS_CURRENT}\" ]; then\n NVS_CURRENT=`dirname \"${NVS_CURRENT}\"`;\n fi;\n sudo \"NVS_CURRENT=${NVS_CURRENT}\" \"${NVS_ROOT}/nvs\" $*\n}",
+	"_": "/usr/bin/cat"
+}
+[2026-07-10T06:42:39.699Z] 
+[2026-07-10T06:42:39.699Z] Stop (9 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:42:39.700Z] Start: Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:42:39.707Z] Stop (7 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:42:39.710Z] Running extension host agents:
+[
+  {
+    "pid": "1569",
+    "ppid": "0",
+    "pgrp": "1569",
+    "cwd": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+    "mntNS": "mnt:[4026532215]",
+    "cmd": "sh /home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --install-builtin-extension GitHub.vscode-pull-request-github --install-builtin-extension github.github-vscode-theme --install-builtin-extension github.codespaces --install-extension HashiCorp.terraform --install-extension mhutchie.git-graph --install-extension phil294.git-log--graph --do-not-sync --start-server  --enable-remote-auto-shutdown --skip-requirements-check ",
+    "env": {
+      "PATH": "/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin",
+      "HOSTNAME": "codespaces-4c5ce2",
+      "RepositoryName": "Github-Examples",
+      "CODESPACES": "********",
+      "ContainerVersion": "13",
+      "LANG": "C.UTF-8",
+      "SHELL": "/bin/bash",
+      "DOCKER_BUILDKIT": "1",
+      "DOTNET_ROOT": "/usr/share/dotnet",
+      "DOTNET_RUNNING_IN_CONTAINER": "********",
+      "DOTNET_USE_POLLING_FILE_WATCHER": "********",
+      "HUGO_DIR": "/usr/local/hugo/bin",
+      "NVM_DIR": "/usr/local/share/nvm",
+      "NVM_SYMLINK_CURRENT": "********",
+      "NVS_DIR": "/usr/local/nvs",
+      "CONDA_DIR": "/opt/conda",
+      "CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+      "PHP_PATH": "/usr/local/php/current",
+      "GEM_PATH": "/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global",
+      "GEM_HOME": "/usr/local/rvm/gems/ruby-3.4.7",
+      "MY_RUBY_HOME": "/usr/local/rvm/rubies/ruby-3.4.7",
+      "SDKMAN_DIR": "/usr/local/sdkman",
+      "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+      "GOROOT": "/usr/local/go",
+      "GOPATH": "/go",
+      "ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+      "ENABLE_DYNAMIC_INSTALL": "********",
+      "DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+      "ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+      "ORYX_DIR": "/usr/local/oryx",
+      "DEBIAN_FLAVOR": "focal-scm",
+      "PYTHON_PATH": "/usr/local/python/current",
+      "PIPX_HOME": "/usr/local/py-utils",
+      "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+      "RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "JAVA_ROOT": "/home/codespace/java",
+      "NODE_ROOT": "/home/codespace/nvm",
+      "PHP_ROOT": "/home/codespace/.php",
+      "PYTHON_ROOT": "/home/codespace/.python",
+      "RUBY_ROOT": "/home/codespace/.ruby",
+      "MAVEN_ROOT": "/home/codespace/.maven",
+      "HUGO_ROOT": "/home/codespace/.hugo",
+      "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+      "NUGET_XMLDOC_MODE": "skip",
+      "ORYX_ENV_TYPE": "vsonline-present",
+      "PYTHONIOENCODING": "UTF-8",
+      "NPM_GLOBAL": "/home/codespace/.npm-global",
+      "NVS_HOME": "/usr/local/nvs",
+      "RVM_PATH": "/usr/local/rvm",
+      "RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+      "JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+      "NVM_INC": "/usr/local/share/nvm/versions/node/v24.14.0/include/node",
+      "rvm_prefix": "/usr/local",
+      "GRADLE_HOME": "/usr/local/sdkman/candidates/gradle/current",
+      "rvm_stored_umask": "0022",
+      "NVS_OS": "linux",
+      "NVS_USE_XZ": "1",
+      "SDKMAN_CANDIDATES_DIR": "/usr/local/sdkman/candidates",
+      "SDKMAN_BROKER_API": "https://broker.sdkman.io",
+      "RUBY_VERSION": "ruby-3.4.7",
+      "rvm_version": "1.29.12 (latest)",
+      "rvm_user_install_flag": "0",
+      "HOME": "/home/codespace",
+      "LS_COLORS": "",
+      "SHELL_LOGGED_IN": "********",
+      "rvm_bin_path": "/usr/local/rvm/bin",
+      "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+      "NVS_ROOT": "/usr/local/nvs",
+      "LESSOPEN": "| /usr/bin/lesspipe %s",
+      "USER": "codespace",
+      "rvm_loaded_flag": "1",
+      "MAVEN_HOME": "/usr/local/sdkman/candidates/maven/current",
+      "SHLVL": "1",
+      "NVM_CD_FLAGS": "",
+      "PROMPT_DIRTRIM": "4",
+      "SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+      "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+      "SDKMAN_PLATFORM": "linuxx64",
+      "NVM_BIN": "/usr/local/share/nvm/versions/node/v24.14.0/bin",
+      "IRBRC": "/usr/local/rvm/rubies/ruby-3.4.7/.irbrc",
+      "rvm_path": "/usr/local/rvm",
+      "OLDPWD": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+      "BASH_FUNC_nvs%%": "() {  if [ -z \"${NVS_HOME}\" ]; then  export NVS_HOME=\"${NVS_ROOT}\";  fi;  export NVS_POSTSCRIPT=\"${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d\" \").sh\";  local NODE_EXE=\"node\";  if [ \"${NVS_OS}\" = \"win\" ]; then  NODE_EXE=\"node.exe\";  fi;  local NODE_PATH=\"${NVS_HOME}/cache/${NODE_EXE}\";  if [ ! -f \"${NODE_PATH}\" ]; then  local NODE_VERSION=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/.*\\///')\";  local NODE_REMOTE=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/\\/.*//')\";  local NODE_BASE_URI=\"$(grep \"\\\"${NODE_REMOTE}\\\" *:\" \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//')\";  local NODE_ARCHIVE_EXT=\".tar.gz\";  local TAR_FLAGS=\"-zxvf\";  if [ \"${NVS_OS}\" = \"win\" ]; then  NODE_ARCHIVE_EXT=\".7z\";  else  if [ \"${NVS_USE_XZ}\" = \"1\" ]; then  NODE_ARCHIVE_EXT=\".tar.xz\";  TAR_FLAGS=\"-Jxvf\";  fi;  fi;  local NODE_ARCH=\"$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')\";  if [ \"${NVS_OS}\" = \"aix\" ]; then  NODE_ARCH=\"ppc64\";  fi;  local NODE_FULLNAME=\"node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}\";  local NODE_URI=\"${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  local NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  if [ ! -d \"${NVS_HOME}/cache\" ]; then  command mkdir -p \"${NVS_HOME}/cache\";  fi;  echo \"Downloading bootstrap node from ${NODE_URI}\";  if type noglob > /dev/null 2>&1; then  noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  else  curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  fi;  if [ ! -f \"${NODE_ARCHIVE}\" ] && [ \"${NODE_ARCHIVE_EXT}\" = \".tar.xz\" ]; then  NODE_ARCHIVE_EXT=\".tar.gz\";  TAR_FLAGS=\"-zxvf\";  NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  echo \"Retry download bootstrap node from ${NODE_URI} in gz format\";  if type noglob > /dev/null 2>&1; then  noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  else  curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  fi;  fi;  if [ ! -f \"${NODE_ARCHIVE}\" ]; then  echo \"Failed to download node binary.\";  return 1;  fi;  if [ \"${NVS_OS}\" = \"win\" ]; then  \"${NVS_ROOT}/tools/7-Zip/7zr.exe\" e \"-o${NVS_HOME}/cache\" -y \"${NODE_ARCHIVE}\" \"${NODE_FULLNAME}/${NODE_EXE}\" > /dev/null 2>&1;  else  if [ \"${NVS_OS}\" = \"aix\" ]; then  gunzip \"${NODE_ARCHIVE}\" | tar -xvC \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;  else  tar $TAR_FLAGS \"${NODE_ARCHIVE}\" -C \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;  fi;  mv \"${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}\" \"${NVS_HOME}/cache/${NODE_EXE}\" > /dev/null 2>&1;  rm -r \"${NVS_HOME}/cache/${NODE_FULLNAME}\" > /dev/null 2>&1;  fi;  if [ ! -f \"${NODE_PATH}\" ]; then  echo \"Failed to setup node binary.\";  return 1;  fi;  echo \"\";  fi;  local EXIT_CODE=0;  case \"$@\" in   \"cd\")  local DIR=$PWD;  while [ \"$DIR\" != \"\" -a ! \\( -e \"$DIR/.node-version\" -o -e \"$DIR/.nvmrc\" \\) ]; do  if [ \"$DIR\" = \"/\" ]; then  DIR=;  else  DIR=$(dirname \"$DIR\");  fi;  done;  if [ \"$DIR\" != \"$NVS_AUTO_DIRECTORY\" ]; then  command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" auto;  EXIT_CODE=$?;  fi;  export NVS_AUTO_DIRECTORY=$DIR  ;;  *)  command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" \"$@\";  EXIT_CODE=$?  ;;  esac;  if [ ${EXIT_CODE} = 2 ]; then  rm \"${NODE_PATH}\";  nvs $@;  fi;  if [ -f \"${NVS_POSTSCRIPT}\" ]; then  . \"${NVS_POSTSCRIPT}\";  command rm \"${NVS_POSTSCRIPT}\";  unset NVS_POSTSCRIPT;  fi;  return $EXIT_CODE }",
+      "BASH_FUNC_nvsudo%%": "() {  local NVS_CURRENT=`nvs which`;  if [ -n \"${NVS_CURRENT}\" ]; then  NVS_CURRENT=`dirname \"${NVS_CURRENT}\"`;  fi;  sudo \"NVS_CURRENT=${NVS_CURRENT}\" \"${NVS_ROOT}/nvs\" $* }",
+      "_": "/usr/bin/cat",
+      "CLOUDENV_ENVIRONMENT_ID": "0da9b07d-b561-45c0-b73f-fe2c6b4fca8b",
+      "CODESPACE_NAME": "********",
+      "GITHUB_SERVER_URL": "********",
+      "GITHUB_API_URL": "********",
+      "GITHUB_GRAPHQL_URL": "********",
+      "GITHUB_REPOSITORY": "********",
+      "INTERNAL_VSCS_TARGET_URL": "********",
+      "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN": "********",
+      "GITHUB_CODESPACE_TOKEN": "********",
+      "GITHUB_TOKEN": "********",
+      "GITHUB_USER": "********",
+      "FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION": "********"
+    }
+  }
+]
+[2026-07-10T06:42:39.710Z] Start: Run in container: readlink -f '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:39.716Z] /vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f
+[2026-07-10T06:42:39.716Z] 
+[2026-07-10T06:42:39.716Z] Stop (6 ms): Run in container: readlink -f '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:39.716Z] Extension host agent is already running.
+[2026-07-10T06:42:39.716Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null
+[2026-07-10T06:42:39.721Z] 38987
+[2026-07-10T06:42:39.721Z] 
+[2026-07-10T06:42:39.721Z] Stop (5 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null
+[2026-07-10T06:42:39.721Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:39.727Z] 5d2896b7-12e8-4f80-a6ad-de1394b454bd
+[2026-07-10T06:42:39.728Z] 
+[2026-07-10T06:42:39.728Z] Stop (7 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:42:39.728Z] Stop (1582 ms): Resolving Remote for VSC start
+[2026-07-10T06:43:57.378Z] @microsoft/vscode-dev-containers-cli 0.95.0.
+[2026-07-10T06:43:57.378Z] Start: Resolving Remote for VSC start
+[2026-07-10T06:43:57.379Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:43:57.403Z] Stop (24 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:43:57.404Z] Start: Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:43:57.422Z] Stop (18 ms): Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:43:57.425Z] Start: Inspecting container
+[2026-07-10T06:43:57.425Z] Stop (0 ms): Inspecting container
+[2026-07-10T06:43:57.428Z] Start: Run in container: /bin/sh
+[2026-07-10T06:43:57.432Z] Start: Run in container: uname -m
+[2026-07-10T06:43:57.494Z] x86_64
+[2026-07-10T06:43:57.494Z] 
+[2026-07-10T06:43:57.494Z] Stop (62 ms): Run in container: uname -m
+[2026-07-10T06:43:57.494Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:43:57.515Z] PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[2026-07-10T06:43:57.515Z] 
+[2026-07-10T06:43:57.515Z] Stop (21 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:43:57.516Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:43:57.558Z] Stop (42 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:43:57.559Z] Start: Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:43:57.576Z] 
+[2026-07-10T06:43:57.576Z] 
+[2026-07-10T06:43:57.576Z] Stop (17 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:43:57.577Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:43:57.591Z] 
+[2026-07-10T06:43:57.591Z] 
+[2026-07-10T06:43:57.591Z] Exit code 1
+[2026-07-10T06:43:57.591Z] Stop (14 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:43:57.592Z] Start: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-07-10T06:43:57.600Z] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This dev container includes the GitHub CLI (`gh`), which is pre-installed and available on the `PATH`. IMPORTANT: `gh api -f` does not support object values, use multiple `-f` flags with hierarchical keys and string values instead. When using GitHub actions `actions/upload-artifact` or `actions/download-artifact` use v4 or later."
+		},
+		{
+			"text": "This dev container includes the Terraform CLI and optionally TFLint and Terragrunt pre-installed and available on the `PATH`, along with the Terraform extension for Terraform development."
+		},
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu 24.04.4 LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	],
+	"terraform.languageServer.enable": ********,
+	"terraform.languageServer.args": [
+		"serve"
+	]
+}
+[2026-07-10T06:43:57.601Z] 
+[2026-07-10T06:43:57.601Z] Stop (9 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-07-10T06:43:57.602Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:43:57.603Z] 
+[2026-07-10T06:43:57.603Z] 
+[2026-07-10T06:43:57.603Z] Exit code 1
+[2026-07-10T06:43:57.603Z] Stop (1 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:43:57.604Z] Start: Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:57.605Z] 
+[2026-07-10T06:43:57.605Z] 
+[2026-07-10T06:43:57.605Z] Stop (1 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:57.605Z] Start: Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:57.606Z] 
+[2026-07-10T06:43:57.606Z] 
+[2026-07-10T06:43:57.606Z] Stop (1 ms): Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:57.606Z] Start: Run in container: /bin/sh
+[2026-07-10T06:43:57.609Z] Start: Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:43:57.609Z] Start: Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:57.613Z] 
+[2026-07-10T06:43:57.613Z] 
+[2026-07-10T06:43:57.613Z] Stop (4 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:43:57.614Z] Start: Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:43:57.733Z] 
+[2026-07-10T06:43:57.734Z] 
+[2026-07-10T06:43:57.734Z] Stop (125 ms): Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:57.772Z] 
+[2026-07-10T06:43:57.772Z] 
+[2026-07-10T06:43:57.772Z] Stop (158 ms): Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:43:57.772Z] userEnvProbe: loginInteractiveShell (default)
+[2026-07-10T06:43:57.773Z] Start: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:43:57.779Z] 
+[2026-07-10T06:43:57.779Z] 
+[2026-07-10T06:43:57.779Z] Stop (6 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:43:57.779Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:43:58.307Z] Stop (528 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:43:58.307Z] Start: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:43:58.315Z] {
+	"SHELL": "/bin/bash",
+	"NUGET_XMLDOC_MODE": "skip",
+	"NVM_INC": "/usr/local/share/nvm/versions/node/v24.14.0/include/node",
+	"rvm_prefix": "/usr/local",
+	"HOSTNAME": "codespaces-4c5ce2",
+	"RepositoryName": "Github-Examples",
+	"JAVA_ROOT": "/home/codespace/java",
+	"JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+	"DOTNET_ROOT": "/usr/share/dotnet",
+	"CODESPACES": "********",
+	"GRADLE_HOME": "/usr/local/sdkman/candidates/gradle/current",
+	"PYTHON_ROOT": "/home/codespace/.python",
+	"rvm_stored_umask": "0022",
+	"NVS_DIR": "/usr/local/nvs",
+	"NVS_OS": "linux",
+	"DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+	"MY_RUBY_HOME": "/usr/local/rvm/rubies/ruby-3.4.7",
+	"NVS_USE_XZ": "1",
+	"SDKMAN_CANDIDATES_DIR": "/usr/local/sdkman/candidates",
+	"SDKMAN_BROKER_API": "https://broker.sdkman.io",
+	"RUBY_VERSION": "ruby-3.4.7",
+	"PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+	"rvm_version": "1.29.12 (latest)",
+	"ORYX_DIR": "/usr/local/oryx",
+	"rvm_user_install_flag": "0",
+	"ContainerVersion": "13",
+	"HUGO_ROOT": "/home/codespace/.hugo",
+	"NPM_GLOBAL": "/home/codespace/.npm-global",
+	"HOME": "/home/codespace",
+	"LANG": "C.UTF-8",
+	"LS_COLORS": "",
+	"DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+	"NVM_SYMLINK_CURRENT": "********",
+	"PHP_PATH": "/usr/local/php/current",
+	"DEBIAN_FLAVOR": "focal-scm",
+	"PHP_ROOT": "/home/codespace/.php",
+	"ORYX_ENV_TYPE": "vsonline-present",
+	"HUGO_DIR": "/usr/local/hugo/bin",
+	"DOCKER_BUILDKIT": "1",
+	"GOROOT": "/usr/local/go",
+	"SHELL_LOGGED_IN": "********",
+	"PYTHON_PATH": "/usr/local/python/current",
+	"NVM_DIR": "/usr/local/share/nvm",
+	"rvm_bin_path": "/usr/local/rvm/bin",
+	"GEM_PATH": "/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global",
+	"GEM_HOME": "/usr/local/rvm/gems/ruby-3.4.7",
+	"LESSCLOSE": "/usr/bin/lesspipe %s %s",
+	"NVS_ROOT": "/usr/local/nvs",
+	"LESSOPEN": "| /usr/bin/lesspipe %s",
+	"USER": "codespace",
+	"NODE_ROOT": "/home/codespace/nvm",
+	"PYTHONIOENCODING": "UTF-8",
+	"NVS_HOME": "/usr/local/nvs",
+	"PIPX_HOME": "/usr/local/py-utils",
+	"rvm_loaded_flag": "1",
+	"CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+	"MAVEN_HOME": "/usr/local/sdkman/candidates/maven/current",
+	"SDKMAN_DIR": "/usr/local/sdkman",
+	"SHLVL": "1",
+	"NVM_CD_FLAGS": "",
+	"ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+	"CONDA_DIR": "/opt/conda",
+	"PROMPT_DIRTRIM": "4",
+	"SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+	"DOTNET_RUNNING_IN_CONTAINER": "********",
+	"DOTNET_USE_POLLING_FILE_WATCHER": "********",
+	"ENABLE_DYNAMIC_INSTALL": "********",
+	"MAVEN_ROOT": "/home/codespace/.maven",
+	"ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+	"JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+	"DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+	"RVM_PATH": "/usr/local/rvm",
+	"RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+	"RUBY_ROOT": "/home/codespace/.ruby",
+	"RUBY_HOME": "/usr/local/rvm/rubies/default",
+	"PATH": "/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin",
+	"SDKMAN_PLATFORM": "linuxx64",
+	"NVM_BIN": "/usr/local/share/nvm/versions/node/v24.14.0/bin",
+	"IRBRC": "/usr/local/rvm/rubies/ruby-3.4.7/.irbrc",
+	"rvm_path": "/usr/local/rvm",
+	"OLDPWD": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+	"GOPATH": "/go",
+	"BASH_FUNC_nvs%%": "() {  if [ -z \"${NVS_HOME}\" ]; then\n export NVS_HOME=\"${NVS_ROOT}\";\n fi;\n export NVS_POSTSCRIPT=\"${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d\" \").sh\";\n local NODE_EXE=\"node\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_EXE=\"node.exe\";\n fi;\n local NODE_PATH=\"${NVS_HOME}/cache/${NODE_EXE}\";\n if [ ! -f \"${NODE_PATH}\" ]; then\n local NODE_VERSION=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/.*\\///')\";\n local NODE_REMOTE=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/\\/.*//')\";\n local NODE_BASE_URI=\"$(grep \"\\\"${NODE_REMOTE}\\\" *:\" \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//')\";\n local NODE_ARCHIVE_EXT=\".tar.gz\";\n local TAR_FLAGS=\"-zxvf\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_ARCHIVE_EXT=\".7z\";\n else\n if [ \"${NVS_USE_XZ}\" = \"1\" ]; then\n NODE_ARCHIVE_EXT=\".tar.xz\";\n TAR_FLAGS=\"-Jxvf\";\n fi;\n fi;\n local NODE_ARCH=\"$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')\";\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n NODE_ARCH=\"ppc64\";\n fi;\n local NODE_FULLNAME=\"node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}\";\n local NODE_URI=\"${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n local NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n if [ ! -d \"${NVS_HOME}/cache\" ]; then\n command mkdir -p \"${NVS_HOME}/cache\";\n fi;\n echo \"Downloading bootstrap node from ${NODE_URI}\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ] && [ \"${NODE_ARCHIVE_EXT}\" = \".tar.xz\" ]; then\n NODE_ARCHIVE_EXT=\".tar.gz\";\n TAR_FLAGS=\"-zxvf\";\n NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n echo \"Retry download bootstrap node from ${NODE_URI} in gz format\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ]; then\n echo \"Failed to download node binary.\";\n return 1;\n fi;\n if [ \"${NVS_OS}\" = \"win\" ]; then\n \"${NVS_ROOT}/tools/7-Zip/7zr.exe\" e \"-o${NVS_HOME}/cache\" -y \"${NODE_ARCHIVE}\" \"${NODE_FULLNAME}/${NODE_EXE}\" > /dev/null 2>&1;\n else\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n gunzip \"${NODE_ARCHIVE}\" | tar -xvC \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n else\n tar $TAR_FLAGS \"${NODE_ARCHIVE}\" -C \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n fi;\n mv \"${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}\" \"${NVS_HOME}/cache/${NODE_EXE}\" > /dev/null 2>&1;\n rm -r \"${NVS_HOME}/cache/${NODE_FULLNAME}\" > /dev/null 2>&1;\n fi;\n if [ ! -f \"${NODE_PATH}\" ]; then\n echo \"Failed to setup node binary.\";\n return 1;\n fi;\n echo \"\";\n fi;\n local EXIT_CODE=0;\n case \"$@\" in \n \"cd\")\n local DIR=$PWD;\n while [ \"$DIR\" != \"\" -a ! \\( -e \"$DIR/.node-version\" -o -e \"$DIR/.nvmrc\" \\) ]; do\n if [ \"$DIR\" = \"/\" ]; then\n DIR=;\n else\n DIR=$(dirname \"$DIR\");\n fi;\n done;\n if [ \"$DIR\" != \"$NVS_AUTO_DIRECTORY\" ]; then\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" auto;\n EXIT_CODE=$?;\n fi;\n export NVS_AUTO_DIRECTORY=$DIR\n ;;\n *)\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" \"$@\";\n EXIT_CODE=$?\n ;;\n esac;\n if [ ${EXIT_CODE} = 2 ]; then\n rm \"${NODE_PATH}\";\n nvs $@;\n fi;\n if [ -f \"${NVS_POSTSCRIPT}\" ]; then\n . \"${NVS_POSTSCRIPT}\";\n command rm \"${NVS_POSTSCRIPT}\";\n unset NVS_POSTSCRIPT;\n fi;\n return $EXIT_CODE\n}",
+	"BASH_FUNC_nvsudo%%": "() {  local NVS_CURRENT=`nvs which`;\n if [ -n \"${NVS_CURRENT}\" ]; then\n NVS_CURRENT=`dirname \"${NVS_CURRENT}\"`;\n fi;\n sudo \"NVS_CURRENT=${NVS_CURRENT}\" \"${NVS_ROOT}/nvs\" $*\n}",
+	"_": "/usr/bin/cat"
+}
+[2026-07-10T06:43:58.316Z] 
+[2026-07-10T06:43:58.316Z] Stop (9 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:43:58.316Z] Start: Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:43:58.321Z] Stop (5 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:43:58.324Z] Running extension host agents:
+[
+  {
+    "pid": "1569",
+    "ppid": "0",
+    "pgrp": "1569",
+    "cwd": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+    "mntNS": "mnt:[4026532215]",
+    "cmd": "sh /home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --install-builtin-extension GitHub.vscode-pull-request-github --install-builtin-extension github.github-vscode-theme --install-builtin-extension github.codespaces --install-extension HashiCorp.terraform --install-extension mhutchie.git-graph --install-extension phil294.git-log--graph --do-not-sync --start-server  --enable-remote-auto-shutdown --skip-requirements-check ",
+    "env": {
+      "PATH": "/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin",
+      "HOSTNAME": "codespaces-4c5ce2",
+      "RepositoryName": "Github-Examples",
+      "CODESPACES": "********",
+      "ContainerVersion": "13",
+      "LANG": "C.UTF-8",
+      "SHELL": "/bin/bash",
+      "DOCKER_BUILDKIT": "1",
+      "DOTNET_ROOT": "/usr/share/dotnet",
+      "DOTNET_RUNNING_IN_CONTAINER": "********",
+      "DOTNET_USE_POLLING_FILE_WATCHER": "********",
+      "HUGO_DIR": "/usr/local/hugo/bin",
+      "NVM_DIR": "/usr/local/share/nvm",
+      "NVM_SYMLINK_CURRENT": "********",
+      "NVS_DIR": "/usr/local/nvs",
+      "CONDA_DIR": "/opt/conda",
+      "CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+      "PHP_PATH": "/usr/local/php/current",
+      "GEM_PATH": "/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global",
+      "GEM_HOME": "/usr/local/rvm/gems/ruby-3.4.7",
+      "MY_RUBY_HOME": "/usr/local/rvm/rubies/ruby-3.4.7",
+      "SDKMAN_DIR": "/usr/local/sdkman",
+      "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+      "GOROOT": "/usr/local/go",
+      "GOPATH": "/go",
+      "ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+      "ENABLE_DYNAMIC_INSTALL": "********",
+      "DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+      "ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+      "ORYX_DIR": "/usr/local/oryx",
+      "DEBIAN_FLAVOR": "focal-scm",
+      "PYTHON_PATH": "/usr/local/python/current",
+      "PIPX_HOME": "/usr/local/py-utils",
+      "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+      "RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "JAVA_ROOT": "/home/codespace/java",
+      "NODE_ROOT": "/home/codespace/nvm",
+      "PHP_ROOT": "/home/codespace/.php",
+      "PYTHON_ROOT": "/home/codespace/.python",
+      "RUBY_ROOT": "/home/codespace/.ruby",
+      "MAVEN_ROOT": "/home/codespace/.maven",
+      "HUGO_ROOT": "/home/codespace/.hugo",
+      "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+      "NUGET_XMLDOC_MODE": "skip",
+      "ORYX_ENV_TYPE": "vsonline-present",
+      "PYTHONIOENCODING": "UTF-8",
+      "NPM_GLOBAL": "/home/codespace/.npm-global",
+      "NVS_HOME": "/usr/local/nvs",
+      "RVM_PATH": "/usr/local/rvm",
+      "RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+      "JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+      "NVM_INC": "/usr/local/share/nvm/versions/node/v24.14.0/include/node",
+      "rvm_prefix": "/usr/local",
+      "GRADLE_HOME": "/usr/local/sdkman/candidates/gradle/current",
+      "rvm_stored_umask": "0022",
+      "NVS_OS": "linux",
+      "NVS_USE_XZ": "1",
+      "SDKMAN_CANDIDATES_DIR": "/usr/local/sdkman/candidates",
+      "SDKMAN_BROKER_API": "https://broker.sdkman.io",
+      "RUBY_VERSION": "ruby-3.4.7",
+      "rvm_version": "1.29.12 (latest)",
+      "rvm_user_install_flag": "0",
+      "HOME": "/home/codespace",
+      "LS_COLORS": "",
+      "SHELL_LOGGED_IN": "********",
+      "rvm_bin_path": "/usr/local/rvm/bin",
+      "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+      "NVS_ROOT": "/usr/local/nvs",
+      "LESSOPEN": "| /usr/bin/lesspipe %s",
+      "USER": "codespace",
+      "rvm_loaded_flag": "1",
+      "MAVEN_HOME": "/usr/local/sdkman/candidates/maven/current",
+      "SHLVL": "1",
+      "NVM_CD_FLAGS": "",
+      "PROMPT_DIRTRIM": "4",
+      "SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+      "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+      "SDKMAN_PLATFORM": "linuxx64",
+      "NVM_BIN": "/usr/local/share/nvm/versions/node/v24.14.0/bin",
+      "IRBRC": "/usr/local/rvm/rubies/ruby-3.4.7/.irbrc",
+      "rvm_path": "/usr/local/rvm",
+      "OLDPWD": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+      "BASH_FUNC_nvs%%": "() {  if [ -z \"${NVS_HOME}\" ]; then  export NVS_HOME=\"${NVS_ROOT}\";  fi;  export NVS_POSTSCRIPT=\"${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d\" \").sh\";  local NODE_EXE=\"node\";  if [ \"${NVS_OS}\" = \"win\" ]; then  NODE_EXE=\"node.exe\";  fi;  local NODE_PATH=\"${NVS_HOME}/cache/${NODE_EXE}\";  if [ ! -f \"${NODE_PATH}\" ]; then  local NODE_VERSION=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/.*\\///')\";  local NODE_REMOTE=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/\\/.*//')\";  local NODE_BASE_URI=\"$(grep \"\\\"${NODE_REMOTE}\\\" *:\" \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//')\";  local NODE_ARCHIVE_EXT=\".tar.gz\";  local TAR_FLAGS=\"-zxvf\";  if [ \"${NVS_OS}\" = \"win\" ]; then  NODE_ARCHIVE_EXT=\".7z\";  else  if [ \"${NVS_USE_XZ}\" = \"1\" ]; then  NODE_ARCHIVE_EXT=\".tar.xz\";  TAR_FLAGS=\"-Jxvf\";  fi;  fi;  local NODE_ARCH=\"$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')\";  if [ \"${NVS_OS}\" = \"aix\" ]; then  NODE_ARCH=\"ppc64\";  fi;  local NODE_FULLNAME=\"node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}\";  local NODE_URI=\"${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  local NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  if [ ! -d \"${NVS_HOME}/cache\" ]; then  command mkdir -p \"${NVS_HOME}/cache\";  fi;  echo \"Downloading bootstrap node from ${NODE_URI}\";  if type noglob > /dev/null 2>&1; then  noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  else  curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  fi;  if [ ! -f \"${NODE_ARCHIVE}\" ] && [ \"${NODE_ARCHIVE_EXT}\" = \".tar.xz\" ]; then  NODE_ARCHIVE_EXT=\".tar.gz\";  TAR_FLAGS=\"-zxvf\";  NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  echo \"Retry download bootstrap node from ${NODE_URI} in gz format\";  if type noglob > /dev/null 2>&1; then  noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  else  curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  fi;  fi;  if [ ! -f \"${NODE_ARCHIVE}\" ]; then  echo \"Failed to download node binary.\";  return 1;  fi;  if [ \"${NVS_OS}\" = \"win\" ]; then  \"${NVS_ROOT}/tools/7-Zip/7zr.exe\" e \"-o${NVS_HOME}/cache\" -y \"${NODE_ARCHIVE}\" \"${NODE_FULLNAME}/${NODE_EXE}\" > /dev/null 2>&1;  else  if [ \"${NVS_OS}\" = \"aix\" ]; then  gunzip \"${NODE_ARCHIVE}\" | tar -xvC \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;  else  tar $TAR_FLAGS \"${NODE_ARCHIVE}\" -C \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;  fi;  mv \"${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}\" \"${NVS_HOME}/cache/${NODE_EXE}\" > /dev/null 2>&1;  rm -r \"${NVS_HOME}/cache/${NODE_FULLNAME}\" > /dev/null 2>&1;  fi;  if [ ! -f \"${NODE_PATH}\" ]; then  echo \"Failed to setup node binary.\";  return 1;  fi;  echo \"\";  fi;  local EXIT_CODE=0;  case \"$@\" in   \"cd\")  local DIR=$PWD;  while [ \"$DIR\" != \"\" -a ! \\( -e \"$DIR/.node-version\" -o -e \"$DIR/.nvmrc\" \\) ]; do  if [ \"$DIR\" = \"/\" ]; then  DIR=;  else  DIR=$(dirname \"$DIR\");  fi;  done;  if [ \"$DIR\" != \"$NVS_AUTO_DIRECTORY\" ]; then  command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" auto;  EXIT_CODE=$?;  fi;  export NVS_AUTO_DIRECTORY=$DIR  ;;  *)  command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" \"$@\";  EXIT_CODE=$?  ;;  esac;  if [ ${EXIT_CODE} = 2 ]; then  rm \"${NODE_PATH}\";  nvs $@;  fi;  if [ -f \"${NVS_POSTSCRIPT}\" ]; then  . \"${NVS_POSTSCRIPT}\";  command rm \"${NVS_POSTSCRIPT}\";  unset NVS_POSTSCRIPT;  fi;  return $EXIT_CODE }",
+      "BASH_FUNC_nvsudo%%": "() {  local NVS_CURRENT=`nvs which`;  if [ -n \"${NVS_CURRENT}\" ]; then  NVS_CURRENT=`dirname \"${NVS_CURRENT}\"`;  fi;  sudo \"NVS_CURRENT=${NVS_CURRENT}\" \"${NVS_ROOT}/nvs\" $* }",
+      "_": "/usr/bin/cat",
+      "CLOUDENV_ENVIRONMENT_ID": "0da9b07d-b561-45c0-b73f-fe2c6b4fca8b",
+      "CODESPACE_NAME": "********",
+      "GITHUB_SERVER_URL": "********",
+      "GITHUB_API_URL": "********",
+      "GITHUB_GRAPHQL_URL": "********",
+      "GITHUB_REPOSITORY": "********",
+      "INTERNAL_VSCS_TARGET_URL": "********",
+      "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN": "********",
+      "GITHUB_CODESPACE_TOKEN": "********",
+      "GITHUB_TOKEN": "********",
+      "GITHUB_USER": "********",
+      "FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION": "********"
+    }
+  }
+]
+[2026-07-10T06:43:58.324Z] Start: Run in container: readlink -f '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:58.328Z] /vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f
+[2026-07-10T06:43:58.328Z] 
+[2026-07-10T06:43:58.328Z] Stop (4 ms): Run in container: readlink -f '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:58.328Z] Extension host agent is already running.
+[2026-07-10T06:43:58.328Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null
+[2026-07-10T06:43:58.332Z] 38987
+[2026-07-10T06:43:58.332Z] 
+[2026-07-10T06:43:58.332Z] Stop (4 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null
+[2026-07-10T06:43:58.333Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:58.337Z] 5d2896b7-12e8-4f80-a6ad-de1394b454bd
+[2026-07-10T06:43:58.337Z] 
+[2026-07-10T06:43:58.337Z] Stop (4 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:43:58.337Z] Stop (959 ms): Resolving Remote for VSC start
+[2026-07-10T06:43:58.884Z] [06:43:58] [127.0.0.1][689bca23][ManagementConnection] New connection established.
+[2026-07-10T06:43:58.902Z] [06:43:58] [127.0.0.1][7535eca4][ExtensionHostConnection] New connection established.
+[06:43:58] [127.0.0.1][7535eca4][ExtensionHostConnection] Starting extension host process...
+[2026-07-10T06:43:58.914Z] [06:43:58] [127.0.0.1][7535eca4][ExtensionHostConnection] <5139> Launched Extension Host Process.
+[2026-07-10T06:43:59.717Z] [06:43:59] [127.0.0.1][7535eca4][ExtensionHostConnection] <5139> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+[2026-07-10T06:44:19.257Z] @microsoft/vscode-dev-containers-cli 0.95.0.
+[2026-07-10T06:44:19.257Z] Start: Resolving Remote for VSC start
+[2026-07-10T06:44:19.263Z] Start: Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:44:19.331Z] Stop (68 ms): Run: docker ps -q -a --filter label=Type=codespaces
+[2026-07-10T06:44:19.335Z] Start: Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:44:19.373Z] Stop (38 ms): Run: docker inspect --type container fa78ce10e582
+[2026-07-10T06:44:19.374Z] Start: Inspecting container
+[2026-07-10T06:44:19.375Z] Stop (1 ms): Inspecting container
+[2026-07-10T06:44:19.376Z] Start: Run in container: /bin/sh
+[2026-07-10T06:44:19.382Z] Start: Run in container: uname -m
+[2026-07-10T06:44:19.517Z] x86_64
+[2026-07-10T06:44:19.517Z] 
+[2026-07-10T06:44:19.517Z] Stop (135 ms): Run in container: uname -m
+[2026-07-10T06:44:19.518Z] Start: Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:44:19.531Z] PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+[2026-07-10T06:44:19.532Z] 
+[2026-07-10T06:44:19.532Z] Stop (14 ms): Run in container: (cat /etc/os-release || cat /usr/lib/os-release) 2>/dev/null
+[2026-07-10T06:44:19.533Z] Start: Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:44:19.542Z] Stop (9 ms): Run in container:  (command -v getent >/dev/null 2>&1 && getent passwd 'codespace' || grep -E '^codespace|^[^:]*:[^:]*:codespace:' /etc/passwd || ********)
+[2026-07-10T06:44:19.545Z] Start: Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:44:19.547Z] 
+[2026-07-10T06:44:19.548Z] 
+[2026-07-10T06:44:19.548Z] Stop (3 ms): Run in container: test -d '/home/codespace/.vscode-remote'
+[2026-07-10T06:44:19.549Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:44:19.550Z] 
+[2026-07-10T06:44:19.550Z] 
+[2026-07-10T06:44:19.550Z] Exit code 1
+[2026-07-10T06:44:19.550Z] Stop (1 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineSettingsMarker' ; } 2> /dev/null
+[2026-07-10T06:44:19.551Z] Start: Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-07-10T06:44:19.566Z] {
+	"go.toolsManagement.checkForUpdates": "local",
+	"go.useLanguageServer": ********,
+	"go.gopath": "/go",
+	"python.defaultInterpreterPath": "/home/codespace/.python/current/bin/python3",
+	"jupyter.kernels.filter": [
+		{
+			"path": "/opt/conda/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python2",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/local/python/current/bin/python",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/usr/bin/python3",
+			"type": "pythonEnvironment"
+		},
+		{
+			"path": "/bin/python3",
+			"type": "pythonEnvironment"
+		}
+	],
+	"lldb.executable": "/usr/bin/lldb",
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"text": "This dev container includes the GitHub CLI (`gh`), which is pre-installed and available on the `PATH`. IMPORTANT: `gh api -f` does not support object values, use multiple `-f` flags with hierarchical keys and string values instead. When using GitHub actions `actions/upload-artifact` or `actions/download-artifact` use v4 or later."
+		},
+		{
+			"text": "This dev container includes the Terraform CLI and optionally TFLint and Terragrunt pre-installed and available on the `PATH`, along with the Terraform extension for Terraform development."
+		},
+		{
+			"text": "This workspace is in a dev container running on \"Ubuntu 24.04.4 LTS\".\n\nUse `\"$BROWSER\" <url>` to open a webpage in the host's default browser.\n\nSome of the command line tools available on the `PATH`: `apt`, `dpkg`, `docker`, `git`, `gh`, `kubectl`, `curl`, `wget`, `ssh`, `scp`, `rsync`, `gpg`, `ps`, `lsof`, `netstat`, `top`, `tree`, `find`, `grep`, `zip`, `unzip`, `tar`, `gzip`, `bzip2`, `xz`"
+		}
+	],
+	"terraform.languageServer.enable": ********,
+	"terraform.languageServer.args": [
+		"serve"
+	]
+}
+[2026-07-10T06:44:19.566Z] 
+[2026-07-10T06:44:19.566Z] Stop (15 ms): Run in container: cat /home/codespace/.vscode-remote/data/Machine/settings.json
+[2026-07-10T06:44:19.568Z] Start: Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:44:19.572Z] 
+[2026-07-10T06:44:19.572Z] 
+[2026-07-10T06:44:19.572Z] Exit code 1
+[2026-07-10T06:44:19.572Z] Stop (4 ms): Run in container: test ! -f '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' && set -o noclobber && mkdir -p '/home/codespace/.vscode-remote/data/Machine' && { > '/home/codespace/.vscode-remote/data/Machine/.writeMachineMCPConfigMarker' ; } 2> /dev/null
+[2026-07-10T06:44:19.573Z] Start: Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:19.575Z] 
+[2026-07-10T06:44:19.575Z] 
+[2026-07-10T06:44:19.575Z] Stop (2 ms): Run in container: test -d '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:19.575Z] Start: Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:19.578Z] 
+[2026-07-10T06:44:19.579Z] 
+[2026-07-10T06:44:19.579Z] Stop (4 ms): Run in container: test -d '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:19.579Z] Start: Run in container: /bin/sh
+[2026-07-10T06:44:19.585Z] Start: Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:44:19.587Z] Start: Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:19.588Z] 
+[2026-07-10T06:44:19.588Z] 
+[2026-07-10T06:44:19.588Z] Stop (3 ms): Run in container: test -x '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:44:19.588Z] Start: Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:44:19.784Z] 
+[2026-07-10T06:44:19.786Z] 
+[2026-07-10T06:44:19.786Z] Stop (199 ms): Run in container: touch '/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:19.893Z] 
+[2026-07-10T06:44:19.893Z] 
+[2026-07-10T06:44:19.893Z] Stop (305 ms): Run in container: '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/helpers/check-requirements.sh'
+[2026-07-10T06:44:19.893Z] userEnvProbe: loginInteractiveShell (default)
+[2026-07-10T06:44:19.898Z] Start: Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:44:19.912Z] 
+[2026-07-10T06:44:19.912Z] 
+[2026-07-10T06:44:19.912Z] Stop (14 ms): Run in container: test -f '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:44:19.912Z] Start: Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:44:20.522Z] Stop (610 ms): Run in container: for pid in `cd /proc && ls -d [0-9]*`; do { echo $pid ; readlink /proc/$pid/cwd || echo ; readlink /proc/$pid/ns/mnt || echo ; cat /proc/$pid/stat | tr "
+[2026-07-10T06:44:20.523Z] Start: Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:44:20.530Z] {
+	"SHELL": "/bin/bash",
+	"NUGET_XMLDOC_MODE": "skip",
+	"NVM_INC": "/usr/local/share/nvm/versions/node/v24.14.0/include/node",
+	"rvm_prefix": "/usr/local",
+	"HOSTNAME": "codespaces-4c5ce2",
+	"RepositoryName": "Github-Examples",
+	"JAVA_ROOT": "/home/codespace/java",
+	"JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+	"DOTNET_ROOT": "/usr/share/dotnet",
+	"CODESPACES": "********",
+	"GRADLE_HOME": "/usr/local/sdkman/candidates/gradle/current",
+	"PYTHON_ROOT": "/home/codespace/.python",
+	"rvm_stored_umask": "0022",
+	"NVS_DIR": "/usr/local/nvs",
+	"NVS_OS": "linux",
+	"DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+	"MY_RUBY_HOME": "/usr/local/rvm/rubies/ruby-3.4.7",
+	"NVS_USE_XZ": "1",
+	"SDKMAN_CANDIDATES_DIR": "/usr/local/sdkman/candidates",
+	"SDKMAN_BROKER_API": "https://broker.sdkman.io",
+	"RUBY_VERSION": "ruby-3.4.7",
+	"PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+	"rvm_version": "1.29.12 (latest)",
+	"ORYX_DIR": "/usr/local/oryx",
+	"rvm_user_install_flag": "0",
+	"ContainerVersion": "13",
+	"HUGO_ROOT": "/home/codespace/.hugo",
+	"NPM_GLOBAL": "/home/codespace/.npm-global",
+	"HOME": "/home/codespace",
+	"LANG": "C.UTF-8",
+	"LS_COLORS": "",
+	"DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+	"NVM_SYMLINK_CURRENT": "********",
+	"PHP_PATH": "/usr/local/php/current",
+	"DEBIAN_FLAVOR": "focal-scm",
+	"PHP_ROOT": "/home/codespace/.php",
+	"ORYX_ENV_TYPE": "vsonline-present",
+	"HUGO_DIR": "/usr/local/hugo/bin",
+	"DOCKER_BUILDKIT": "1",
+	"GOROOT": "/usr/local/go",
+	"SHELL_LOGGED_IN": "********",
+	"PYTHON_PATH": "/usr/local/python/current",
+	"NVM_DIR": "/usr/local/share/nvm",
+	"rvm_bin_path": "/usr/local/rvm/bin",
+	"GEM_PATH": "/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global",
+	"GEM_HOME": "/usr/local/rvm/gems/ruby-3.4.7",
+	"LESSCLOSE": "/usr/bin/lesspipe %s %s",
+	"NVS_ROOT": "/usr/local/nvs",
+	"LESSOPEN": "| /usr/bin/lesspipe %s",
+	"USER": "codespace",
+	"NODE_ROOT": "/home/codespace/nvm",
+	"PYTHONIOENCODING": "UTF-8",
+	"NVS_HOME": "/usr/local/nvs",
+	"PIPX_HOME": "/usr/local/py-utils",
+	"rvm_loaded_flag": "1",
+	"CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+	"MAVEN_HOME": "/usr/local/sdkman/candidates/maven/current",
+	"SDKMAN_DIR": "/usr/local/sdkman",
+	"SHLVL": "1",
+	"NVM_CD_FLAGS": "",
+	"ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+	"CONDA_DIR": "/opt/conda",
+	"PROMPT_DIRTRIM": "4",
+	"SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+	"DOTNET_RUNNING_IN_CONTAINER": "********",
+	"DOTNET_USE_POLLING_FILE_WATCHER": "********",
+	"ENABLE_DYNAMIC_INSTALL": "********",
+	"MAVEN_ROOT": "/home/codespace/.maven",
+	"ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+	"JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+	"DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+	"RVM_PATH": "/usr/local/rvm",
+	"RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+	"RUBY_ROOT": "/home/codespace/.ruby",
+	"RUBY_HOME": "/usr/local/rvm/rubies/default",
+	"PATH": "/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin",
+	"SDKMAN_PLATFORM": "linuxx64",
+	"NVM_BIN": "/usr/local/share/nvm/versions/node/v24.14.0/bin",
+	"IRBRC": "/usr/local/rvm/rubies/ruby-3.4.7/.irbrc",
+	"rvm_path": "/usr/local/rvm",
+	"OLDPWD": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+	"GOPATH": "/go",
+	"BASH_FUNC_nvs%%": "() {  if [ -z \"${NVS_HOME}\" ]; then\n export NVS_HOME=\"${NVS_ROOT}\";\n fi;\n export NVS_POSTSCRIPT=\"${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d\" \").sh\";\n local NODE_EXE=\"node\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_EXE=\"node.exe\";\n fi;\n local NODE_PATH=\"${NVS_HOME}/cache/${NODE_EXE}\";\n if [ ! -f \"${NODE_PATH}\" ]; then\n local NODE_VERSION=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/.*\\///')\";\n local NODE_REMOTE=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/\\/.*//')\";\n local NODE_BASE_URI=\"$(grep \"\\\"${NODE_REMOTE}\\\" *:\" \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//')\";\n local NODE_ARCHIVE_EXT=\".tar.gz\";\n local TAR_FLAGS=\"-zxvf\";\n if [ \"${NVS_OS}\" = \"win\" ]; then\n NODE_ARCHIVE_EXT=\".7z\";\n else\n if [ \"${NVS_USE_XZ}\" = \"1\" ]; then\n NODE_ARCHIVE_EXT=\".tar.xz\";\n TAR_FLAGS=\"-Jxvf\";\n fi;\n fi;\n local NODE_ARCH=\"$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')\";\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n NODE_ARCH=\"ppc64\";\n fi;\n local NODE_FULLNAME=\"node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}\";\n local NODE_URI=\"${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n local NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n if [ ! -d \"${NVS_HOME}/cache\" ]; then\n command mkdir -p \"${NVS_HOME}/cache\";\n fi;\n echo \"Downloading bootstrap node from ${NODE_URI}\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ] && [ \"${NODE_ARCHIVE_EXT}\" = \".tar.xz\" ]; then\n NODE_ARCHIVE_EXT=\".tar.gz\";\n TAR_FLAGS=\"-zxvf\";\n NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";\n echo \"Retry download bootstrap node from ${NODE_URI} in gz format\";\n if type noglob > /dev/null 2>&1; then\n noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n else\n curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";\n fi;\n fi;\n if [ ! -f \"${NODE_ARCHIVE}\" ]; then\n echo \"Failed to download node binary.\";\n return 1;\n fi;\n if [ \"${NVS_OS}\" = \"win\" ]; then\n \"${NVS_ROOT}/tools/7-Zip/7zr.exe\" e \"-o${NVS_HOME}/cache\" -y \"${NODE_ARCHIVE}\" \"${NODE_FULLNAME}/${NODE_EXE}\" > /dev/null 2>&1;\n else\n if [ \"${NVS_OS}\" = \"aix\" ]; then\n gunzip \"${NODE_ARCHIVE}\" | tar -xvC \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n else\n tar $TAR_FLAGS \"${NODE_ARCHIVE}\" -C \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;\n fi;\n mv \"${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}\" \"${NVS_HOME}/cache/${NODE_EXE}\" > /dev/null 2>&1;\n rm -r \"${NVS_HOME}/cache/${NODE_FULLNAME}\" > /dev/null 2>&1;\n fi;\n if [ ! -f \"${NODE_PATH}\" ]; then\n echo \"Failed to setup node binary.\";\n return 1;\n fi;\n echo \"\";\n fi;\n local EXIT_CODE=0;\n case \"$@\" in \n \"cd\")\n local DIR=$PWD;\n while [ \"$DIR\" != \"\" -a ! \\( -e \"$DIR/.node-version\" -o -e \"$DIR/.nvmrc\" \\) ]; do\n if [ \"$DIR\" = \"/\" ]; then\n DIR=;\n else\n DIR=$(dirname \"$DIR\");\n fi;\n done;\n if [ \"$DIR\" != \"$NVS_AUTO_DIRECTORY\" ]; then\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" auto;\n EXIT_CODE=$?;\n fi;\n export NVS_AUTO_DIRECTORY=$DIR\n ;;\n *)\n command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" \"$@\";\n EXIT_CODE=$?\n ;;\n esac;\n if [ ${EXIT_CODE} = 2 ]; then\n rm \"${NODE_PATH}\";\n nvs $@;\n fi;\n if [ -f \"${NVS_POSTSCRIPT}\" ]; then\n . \"${NVS_POSTSCRIPT}\";\n command rm \"${NVS_POSTSCRIPT}\";\n unset NVS_POSTSCRIPT;\n fi;\n return $EXIT_CODE\n}",
+	"BASH_FUNC_nvsudo%%": "() {  local NVS_CURRENT=`nvs which`;\n if [ -n \"${NVS_CURRENT}\" ]; then\n NVS_CURRENT=`dirname \"${NVS_CURRENT}\"`;\n fi;\n sudo \"NVS_CURRENT=${NVS_CURRENT}\" \"${NVS_ROOT}/nvs\" $*\n}",
+	"_": "/usr/bin/cat"
+}
+[2026-07-10T06:44:20.532Z] 
+[2026-07-10T06:44:20.532Z] Stop (9 ms): Run in container: cat '/workspaces/.codespaces/.persistedshare/devcontainers-cli/cache/env-loginInteractiveShell.json'
+[2026-07-10T06:44:20.532Z] Start: Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:44:20.538Z] Stop (6 ms): Run in container: cat '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/product.json'
+[2026-07-10T06:44:20.543Z] Running extension host agents:
+[
+  {
+    "pid": "1569",
+    "ppid": "0",
+    "pgrp": "1569",
+    "cwd": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+    "mntNS": "mnt:[4026532215]",
+    "cmd": "sh /home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/code-server --log trace --force-disable-user-env --server-data-dir /home/codespace/.vscode-remote --accept-server-license-terms --host 127.0.0.1 --port 0 --connection-token-file /home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f --extensions-download-dir /home/codespace/.vscode-remote/extensionsCache --install-builtin-extension GitHub.vscode-pull-request-github --install-builtin-extension github.github-vscode-theme --install-builtin-extension github.codespaces --install-extension HashiCorp.terraform --install-extension mhutchie.git-graph --install-extension phil294.git-log--graph --do-not-sync --start-server  --enable-remote-auto-shutdown --skip-requirements-check ",
+    "env": {
+      "PATH": "/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/current/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin",
+      "HOSTNAME": "codespaces-4c5ce2",
+      "RepositoryName": "Github-Examples",
+      "CODESPACES": "********",
+      "ContainerVersion": "13",
+      "LANG": "C.UTF-8",
+      "SHELL": "/bin/bash",
+      "DOCKER_BUILDKIT": "1",
+      "DOTNET_ROOT": "/usr/share/dotnet",
+      "DOTNET_RUNNING_IN_CONTAINER": "********",
+      "DOTNET_USE_POLLING_FILE_WATCHER": "********",
+      "HUGO_DIR": "/usr/local/hugo/bin",
+      "NVM_DIR": "/usr/local/share/nvm",
+      "NVM_SYMLINK_CURRENT": "********",
+      "NVS_DIR": "/usr/local/nvs",
+      "CONDA_DIR": "/opt/conda",
+      "CONDA_SCRIPT": "/opt/conda/etc/profile.d/conda.sh",
+      "PHP_PATH": "/usr/local/php/current",
+      "GEM_PATH": "/usr/local/rvm/gems/ruby-3.4.7:/usr/local/rvm/gems/ruby-3.4.7@global",
+      "GEM_HOME": "/usr/local/rvm/gems/ruby-3.4.7",
+      "MY_RUBY_HOME": "/usr/local/rvm/rubies/ruby-3.4.7",
+      "SDKMAN_DIR": "/usr/local/sdkman",
+      "JAVA_HOME": "/usr/local/sdkman/candidates/java/current",
+      "GOROOT": "/usr/local/go",
+      "GOPATH": "/go",
+      "ORYX_SDK_STORAGE_BASE_URL": "https://oryx-cdn.microsoft.io",
+      "ENABLE_DYNAMIC_INSTALL": "********",
+      "DYNAMIC_INSTALL_ROOT_DIR": "/opt",
+      "ORYX_PREFER_USER_INSTALLED_SDKS": "********",
+      "ORYX_DIR": "/usr/local/oryx",
+      "DEBIAN_FLAVOR": "focal-scm",
+      "PYTHON_PATH": "/usr/local/python/current",
+      "PIPX_HOME": "/usr/local/py-utils",
+      "PIPX_BIN_DIR": "/usr/local/py-utils/bin",
+      "RUBY_HOME": "/usr/local/rvm/rubies/default",
+      "JAVA_ROOT": "/home/codespace/java",
+      "NODE_ROOT": "/home/codespace/nvm",
+      "PHP_ROOT": "/home/codespace/.php",
+      "PYTHON_ROOT": "/home/codespace/.python",
+      "RUBY_ROOT": "/home/codespace/.ruby",
+      "MAVEN_ROOT": "/home/codespace/.maven",
+      "HUGO_ROOT": "/home/codespace/.hugo",
+      "DOTNET_SKIP_FIRST_TIME_EXPERIENCE": "1",
+      "NUGET_XMLDOC_MODE": "skip",
+      "ORYX_ENV_TYPE": "vsonline-present",
+      "PYTHONIOENCODING": "UTF-8",
+      "NPM_GLOBAL": "/home/codespace/.npm-global",
+      "NVS_HOME": "/usr/local/nvs",
+      "RVM_PATH": "/usr/local/rvm",
+      "RAILS_DEVELOPMENT_HOSTS": ".githubpreview.dev,.preview.********,.********",
+      "JUPYTERLAB_PATH": "/home/codespace/.local/bin",
+      "NVM_INC": "/usr/local/share/nvm/versions/node/v24.14.0/include/node",
+      "rvm_prefix": "/usr/local",
+      "GRADLE_HOME": "/usr/local/sdkman/candidates/gradle/current",
+      "rvm_stored_umask": "0022",
+      "NVS_OS": "linux",
+      "NVS_USE_XZ": "1",
+      "SDKMAN_CANDIDATES_DIR": "/usr/local/sdkman/candidates",
+      "SDKMAN_BROKER_API": "https://broker.sdkman.io",
+      "RUBY_VERSION": "ruby-3.4.7",
+      "rvm_version": "1.29.12 (latest)",
+      "rvm_user_install_flag": "0",
+      "HOME": "/home/codespace",
+      "LS_COLORS": "",
+      "SHELL_LOGGED_IN": "********",
+      "rvm_bin_path": "/usr/local/rvm/bin",
+      "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+      "NVS_ROOT": "/usr/local/nvs",
+      "LESSOPEN": "| /usr/bin/lesspipe %s",
+      "USER": "codespace",
+      "rvm_loaded_flag": "1",
+      "MAVEN_HOME": "/usr/local/sdkman/candidates/maven/current",
+      "SHLVL": "1",
+      "NVM_CD_FLAGS": "",
+      "PROMPT_DIRTRIM": "4",
+      "SDKMAN_CANDIDATES_API": "https://api.sdkman.io/2",
+      "DEBUGINFOD_URLS": "https://debuginfod.ubuntu.com ",
+      "SDKMAN_PLATFORM": "linuxx64",
+      "NVM_BIN": "/usr/local/share/nvm/versions/node/v24.14.0/bin",
+      "IRBRC": "/usr/local/rvm/rubies/ruby-3.4.7/.irbrc",
+      "rvm_path": "/usr/local/rvm",
+      "OLDPWD": "/vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f",
+      "BASH_FUNC_nvs%%": "() {  if [ -z \"${NVS_HOME}\" ]; then  export NVS_HOME=\"${NVS_ROOT}\";  fi;  export NVS_POSTSCRIPT=\"${NVS_HOME}/nvs_tmp_$(dd if=/dev/urandom count=1 2> /dev/null | cksum | cut -f1 -d\" \").sh\";  local NODE_EXE=\"node\";  if [ \"${NVS_OS}\" = \"win\" ]; then  NODE_EXE=\"node.exe\";  fi;  local NODE_PATH=\"${NVS_HOME}/cache/${NODE_EXE}\";  if [ ! -f \"${NODE_PATH}\" ]; then  local NODE_VERSION=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/.*\\///')\";  local NODE_REMOTE=\"$(grep '\"bootstrap\" *:' \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//' -e 's/\\/.*//')\";  local NODE_BASE_URI=\"$(grep \"\\\"${NODE_REMOTE}\\\" *:\" \"${NVS_ROOT}/defaults.json\" | sed -e 's/.*: *\"//' -e 's/\"[^\\n]*//')\";  local NODE_ARCHIVE_EXT=\".tar.gz\";  local TAR_FLAGS=\"-zxvf\";  if [ \"${NVS_OS}\" = \"win\" ]; then  NODE_ARCHIVE_EXT=\".7z\";  else  if [ \"${NVS_USE_XZ}\" = \"1\" ]; then  NODE_ARCHIVE_EXT=\".tar.xz\";  TAR_FLAGS=\"-Jxvf\";  fi;  fi;  local NODE_ARCH=\"$(uname -m | sed -e 's/x86_64/x64/;s/i86pc/x64/;s/i686/x86/;s/aarch64/arm64/')\";  if [ \"${NVS_OS}\" = \"aix\" ]; then  NODE_ARCH=\"ppc64\";  fi;  local NODE_FULLNAME=\"node-v${NODE_VERSION}-${NVS_OS}-${NODE_ARCH}\";  local NODE_URI=\"${NODE_BASE_URI}v${NODE_VERSION}/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  local NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  if [ ! -d \"${NVS_HOME}/cache\" ]; then  command mkdir -p \"${NVS_HOME}/cache\";  fi;  echo \"Downloading bootstrap node from ${NODE_URI}\";  if type noglob > /dev/null 2>&1; then  noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  else  curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  fi;  if [ ! -f \"${NODE_ARCHIVE}\" ] && [ \"${NODE_ARCHIVE_EXT}\" = \".tar.xz\" ]; then  NODE_ARCHIVE_EXT=\".tar.gz\";  TAR_FLAGS=\"-zxvf\";  NODE_ARCHIVE=\"${NVS_HOME}/cache/${NODE_FULLNAME}${NODE_ARCHIVE_EXT}\";  echo \"Retry download bootstrap node from ${NODE_URI} in gz format\";  if type noglob > /dev/null 2>&1; then  noglob curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  else  curl -L -# \"${NODE_URI}\" -o \"${NODE_ARCHIVE}\";  fi;  fi;  if [ ! -f \"${NODE_ARCHIVE}\" ]; then  echo \"Failed to download node binary.\";  return 1;  fi;  if [ \"${NVS_OS}\" = \"win\" ]; then  \"${NVS_ROOT}/tools/7-Zip/7zr.exe\" e \"-o${NVS_HOME}/cache\" -y \"${NODE_ARCHIVE}\" \"${NODE_FULLNAME}/${NODE_EXE}\" > /dev/null 2>&1;  else  if [ \"${NVS_OS}\" = \"aix\" ]; then  gunzip \"${NODE_ARCHIVE}\" | tar -xvC \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;  else  tar $TAR_FLAGS \"${NODE_ARCHIVE}\" -C \"${NVS_HOME}/cache\" \"${NODE_FULLNAME}/bin/${NODE_EXE}\" > /dev/null 2>&1;  fi;  mv \"${NVS_HOME}/cache/${NODE_FULLNAME}/bin/${NODE_EXE}\" \"${NVS_HOME}/cache/${NODE_EXE}\" > /dev/null 2>&1;  rm -r \"${NVS_HOME}/cache/${NODE_FULLNAME}\" > /dev/null 2>&1;  fi;  if [ ! -f \"${NODE_PATH}\" ]; then  echo \"Failed to setup node binary.\";  return 1;  fi;  echo \"\";  fi;  local EXIT_CODE=0;  case \"$@\" in   \"cd\")  local DIR=$PWD;  while [ \"$DIR\" != \"\" -a ! \\( -e \"$DIR/.node-version\" -o -e \"$DIR/.nvmrc\" \\) ]; do  if [ \"$DIR\" = \"/\" ]; then  DIR=;  else  DIR=$(dirname \"$DIR\");  fi;  done;  if [ \"$DIR\" != \"$NVS_AUTO_DIRECTORY\" ]; then  command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" auto;  EXIT_CODE=$?;  fi;  export NVS_AUTO_DIRECTORY=$DIR  ;;  *)  command \"${NODE_PATH}\" \"${NVS_ROOT}/lib/index.js\" \"$@\";  EXIT_CODE=$?  ;;  esac;  if [ ${EXIT_CODE} = 2 ]; then  rm \"${NODE_PATH}\";  nvs $@;  fi;  if [ -f \"${NVS_POSTSCRIPT}\" ]; then  . \"${NVS_POSTSCRIPT}\";  command rm \"${NVS_POSTSCRIPT}\";  unset NVS_POSTSCRIPT;  fi;  return $EXIT_CODE }",
+      "BASH_FUNC_nvsudo%%": "() {  local NVS_CURRENT=`nvs which`;  if [ -n \"${NVS_CURRENT}\" ]; then  NVS_CURRENT=`dirname \"${NVS_CURRENT}\"`;  fi;  sudo \"NVS_CURRENT=${NVS_CURRENT}\" \"${NVS_ROOT}/nvs\" $* }",
+      "_": "/usr/bin/cat",
+      "CLOUDENV_ENVIRONMENT_ID": "0da9b07d-b561-45c0-b73f-fe2c6b4fca8b",
+      "CODESPACE_NAME": "********",
+      "GITHUB_SERVER_URL": "********",
+      "GITHUB_API_URL": "********",
+      "GITHUB_GRAPHQL_URL": "********",
+      "GITHUB_REPOSITORY": "********",
+      "INTERNAL_VSCS_TARGET_URL": "********",
+      "GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN": "********",
+      "GITHUB_CODESPACE_TOKEN": "********",
+      "GITHUB_TOKEN": "********",
+      "GITHUB_USER": "********",
+      "FEATURE_SPARK_POST_COMMIT_CREATE_ITERATION": "********"
+    }
+  }
+]
+[2026-07-10T06:44:20.544Z] Start: Run in container: readlink -f '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:20.550Z] /vscode/bin/linux-x64/fc3def6774c76082adf699d366f31a557ce5573f
+[2026-07-10T06:44:20.550Z] 
+[2026-07-10T06:44:20.550Z] Stop (6 ms): Run in container: readlink -f '/home/codespace/.vscode-remote/bin/fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:20.550Z] Extension host agent is already running.
+[2026-07-10T06:44:20.550Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null
+[2026-07-10T06:44:20.558Z] 38987
+[2026-07-10T06:44:20.559Z] 
+[2026-07-10T06:44:20.559Z] Stop (9 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.devport-fc3def6774c76082adf699d366f31a557ce5573f' 2>/dev/null
+[2026-07-10T06:44:20.559Z] Start: Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:20.563Z] 5d2896b7-12e8-4f80-a6ad-de1394b454bd
+[2026-07-10T06:44:20.563Z] 
+[2026-07-10T06:44:20.563Z] Stop (4 ms): Run in container: cat '/home/codespace/.vscode-remote/data/Machine/.connection-token-fc3def6774c76082adf699d366f31a557ce5573f'
+[2026-07-10T06:44:20.564Z] Stop (1307 ms): Resolving Remote for VSC start
+[2026-07-10T06:44:22.254Z] [06:44:22] [127.0.0.1][b8b8bad1][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-07-10T06:48:59.736Z] [06:48:59] [127.0.0.1][3defafca][ExtensionHostConnection] <1611> Extension Host Process exited with code: 0, signal: null.
+[2026-07-10T07:18:28.280Z] [07:18:28] #418: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=********&content-type=application/x-json-stream - error POST read ECONNRESET
+[2026-07-10T07:43:35.578Z] [07:43:35] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+[2026-07-10T07:43:35.578Z] [07:43:35] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
