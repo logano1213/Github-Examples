@@ -61,7 +61,7 @@ cd Github-Examples
 
  ```sh
  eval 'ssh-agent'
- ssh-add /home/andrew/.ssh/alt-github_id_rsa
+ ssh-add YOUR_API_KEY_HERE
  ```
 
  ### Github CLI
