@@ -30,7 +30,7 @@ cd /workspace/tmp
 
 ### HTTPS
 ```sh
-git clone https://github.com/logano1213/Github-Examples.git
+git clone PASTE_YOUR_KEY_HERE
 cd Github-Examples
 ```
 
